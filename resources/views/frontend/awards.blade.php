@@ -21,7 +21,7 @@
             <div class="container">
             <div class="row g-3">
                 @foreach ($award_list as $award)
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="testimonial-card style-three">
                                 <img src="{{ asset('public/storage/award/' . $award->image) }}" alt="Image">
                         </div>

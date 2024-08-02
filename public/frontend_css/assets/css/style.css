@@ -3923,7 +3923,7 @@ input#before_after_slider::-ms-tooltip {
   border-radius: 5px;
   background-color: var(--whiteColor);
   padding: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }

@@ -24,7 +24,7 @@
                         @if (websiteSetupValue('logo'))
                         <img class="logo-light" src="{{ asset('public/storage/website_setup/' . websiteSetupValue('logo')) }}" alt="logo">
                         @else
-                        <img class="logo-light" src="assets/img/logo.webp" alt="logo">
+                        <img class="logo-light" src="{{ asset('public/frontend_css/assets/img/logo.png')}}" alt="logo">
                         @endif
                     </a>
                     <div class="other-option d-flex align-items-center justify-content-end d-lg-none">
@@ -84,7 +84,7 @@
         <div class="responsive-navbar offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="navbarOffcanvas">
             <div class="offcanvas-header">
                 <a href="index.php" class="logo d-inline-block">
-                    <img class="logo-light" src="assets/img/logo.webp" alt="logo">
+                    <img class="logo-light" src="{{ asset('public/frontend_css/assets/img/logo.png')}}" alt="logo">
                 </a>
                 <button type="button" class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
                     <i class="ri-close-line"></i>
