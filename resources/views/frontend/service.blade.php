@@ -30,7 +30,7 @@
                                 <img src="{{ asset('public/storage/service/' . $service->image) }}" alt="Image">
                             </span>
                             <div class="service-info">
-                                <img src="{{ asset('public/frontend_css/assets/img/services/service-card-shape.webp')}}" alt="Image" class="service-card-shape">
+                                {{-- <img src="{{ asset('public/frontend_css/assets/img/services/service-card-shape.webp')}}" alt="Image" class="service-card-shape"> --}}
                                 <h3><a href="#">{{ $service->title }}</a></h3>
                                 <p>{{ $service->short_desc }}</p>
                                 {{-- <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a> --}}
