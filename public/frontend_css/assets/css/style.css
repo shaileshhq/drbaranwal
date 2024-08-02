@@ -2446,11 +2446,12 @@ select {
   transition: var(--transition);
   aspect-ratio: 1 / 1;
   object-fit: contain;
+  width: 100%;
 }
 .service-card.style-three .service-info {
   position: relative;
   z-index: 1;
-  padding: 25px;
+  padding: 10px 5px;
 }
 .service-card.style-three .service-info .service-card-shape {
   position: absolute;
@@ -2481,7 +2482,7 @@ select {
 .service-card.style-three .service-info h3 {
   font-size: 22px;
   line-height: 30px;
-  margin: 0 0 16px;
+  margin: 0 0 5px;
   letter-spacing: -0.03em;
 }
 .service-card.style-three .service-info h3 a {
@@ -2491,7 +2492,7 @@ select {
   color: var(--primaryColor);
 }
 .service-card.style-three .service-info p {
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 
 .service-slider-wrap {
@@ -5566,7 +5567,10 @@ article {
   max-width: 100%;
   display: block;
   height: auto;
-  border-radius: 5px
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 1px 1px 10px 0px;
+  padding: 10px;
+  aspect-ratio: 1;
 }
 
 .caption {
