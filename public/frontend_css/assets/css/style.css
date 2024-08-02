@@ -3919,13 +3919,13 @@ input#before_after_slider::-ms-tooltip {
   box-shadow: 0px 0px 40px rgba(0, 10, 45, 0.06);
   border-radius: 5px;
   background-color: var(--whiteColor);
-  padding: 25px 22px 25px;
+  padding: 10px;
   margin-bottom: 25px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
 }
 .testimonial-card.style-three img{
-  height: 200px;
+  height: 240px;
   width: 100%;
 }
 .testimonial-card.style-three .client-info-wrap {
