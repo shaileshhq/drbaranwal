@@ -2434,6 +2434,8 @@ select {
 .service-card.style-three {
   background-color: var(--whiteColor);
   border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 1px 1px 10px 0px;
+    padding: 10px;
 }
 .service-card.style-three .service-img {
   border-radius: 5px 5px 0 0;
