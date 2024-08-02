@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="{{ asset('public/frontend_css/assets/css/dark-theme.css')}}">
 
         <title>Dental Clinic</title>
-        <link rel="icon" type="image/png" href="{{ asset('public/frontend_css/assets/img/favicon.webp')}}">
+        <link rel="icon" type="image/png" href="{{ asset('public/frontend_css/assets/img/favicon.png')}}">
     </head>
     <body>
         <!--  Preloader Start -->
