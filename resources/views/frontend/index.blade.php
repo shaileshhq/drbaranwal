@@ -29,7 +29,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <img src="{{ asset('public/frontend_css/assets/img/hero/hero-img-1.webp')}}" alt="Image" class="hero-img">
+                            <img src="{{ asset('public/frontend_css/assets/img/hero/drbaranwal.png')}}" alt="Image" class="hero-img">
                         </div>
                     </div>
                 </div>

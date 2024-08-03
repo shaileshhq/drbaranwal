@@ -1460,11 +1460,11 @@ select {
 .hero-wrap.style-one .hero-img-wrap {
   position: relative;
   z-index: 1;
-  padding: 30px 0 0;
+  padding: 10px 0 0;
 }
 .hero-wrap.style-one .hero-img-wrap .hero-img {
   position: relative;
-  z-index: 3;
+  z-index: -1;
 }
 .hero-wrap.style-one .hero-img-wrap .hero-promo-box {
   border-radius: 0px 5px 0px 0px;
@@ -2142,7 +2142,7 @@ select {
 }
 .about-wrap.style-three .about-img-wrap {
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 150px;
 }
 .about-wrap.style-three .about-img-wrap .promo-box {
   box-shadow: 10px 12px 50px rgba(0, 10, 45, 0.07);
@@ -2153,8 +2153,8 @@ select {
   position: absolute;
   z-index: 2;
   background-color: var(--whiteColor);
-  bottom: 25px;
-  left: 80px;
+  bottom: 75px;
+  left: 65px;
   padding: 30px 34px 30px 36px;
 }
 .about-wrap.style-three .about-img-wrap .promo-box h5 {

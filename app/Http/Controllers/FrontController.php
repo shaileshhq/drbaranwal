@@ -83,7 +83,7 @@ class FrontController extends Controller
         $enquiry->message = $request->message;
 
         $enquiry->save();
-        return redirect()->route('contact')->with('success', 'Your enquiry has been sent successfully!');
+        return redirect()->route('contact')->with('success', 'Your enquiry hasbeen sent Successfully!');
     }
 
     public function appointment(Request $request)

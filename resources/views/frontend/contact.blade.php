@@ -73,6 +73,11 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28856.452348014736!2d82.96580077096012!3d25.3023042680097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e3206e0b28375%3A0xcae9d908d962a4b9!2sVaranasi%2C%20Uttar%20Pradesh%20221010!5e0!3m2!1sen!2sin!4v1722332044880!5m2!1sen!2sin" width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="col-xl-6">
+                            @if ($message = Session::get('success'))
+                                    <div class="alert alert-success">
+                                    <strong>Success!</strong> {{ $message }}
+                                    </div>
+                            @endif
                         <div class="contact-form">
                             <form class="form-wrap contactForm" action="{{ route('front.contact.store') }}" method="POST">
                                 @csrf
@@ -103,7 +108,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn-two">Submit</button>
+                                        <button type="submit" name="submit" class="btn-two">Submit</button>
                                         <div class="clearfix"></div>
                                     </div>
                                 </div>

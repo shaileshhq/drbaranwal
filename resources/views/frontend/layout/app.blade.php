@@ -16,8 +16,7 @@
         <link rel="stylesheet" href="{{ asset('public/frontend_css/assets/css/footer.css')}}">
         <link rel="stylesheet" href="{{ asset('public/frontend_css/assets/css/responsive.css')}}">
         <link rel="stylesheet" href="{{ asset('public/frontend_css/assets/css/dark-theme.css')}}">
-
-        <title>Dental Clinic</title>
+        <title>Dr. A.K Baranwals | Aesthetic Dental Clinic</title>
         <link rel="icon" type="image/png" href="{{ asset('public/frontend_css/assets/img/favicon.png')}}">
     </head>
     <body>
