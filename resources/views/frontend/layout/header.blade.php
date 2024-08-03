@@ -20,7 +20,7 @@
             </div>
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="index.php">
+                    <a class="navbar-brand" href="{{route('index')}}">
                         @if (websiteSetupValue('logo'))
                         <img class="logo-light" src="{{ asset('public/storage/website_setup/' . websiteSetupValue('logo')) }}" alt="logo">
                         @else
@@ -48,7 +48,24 @@
                                 <a href="{{ route('gallery') }}" class="nav-link {{ Route::is('gallery') ? 'active' : '' }}">Gallery</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('award') }}" class="nav-link {{ Route::is('award') ? 'active' : '' }}">Award</a>
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    Awards
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="{{ route('award', 'certificate') }}" class="nav-link {{ Route::is('award') ? 'active' : '' }}">Certificate</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('award', 'guest_awards') }}" class="nav-link {{ Route::is('award') ? 'active' : '' }}">
+                                            Guest Awards
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{ route('award', 'guest_lecture') }}" class="nav-link {{ Route::is('award') ? 'active' : '' }}">
+                                            Guest Lecture
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('service') }}" class="nav-link {{ Route::is('service') ? 'active' : '' }}">Dental Services</a>
@@ -102,7 +119,33 @@
                         <a class="accordion-button without-icon" href="{{ route('gallery') }}">Gallery</a>
                     </div>
                     <div class="accordion-item">
-                        <a class="accordion-button without-icon" href="{{ route('award') }}">Award</a>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Awards
+                        </button>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                            <div class="accordion-body">
+                                <div class="accordion" id="navbarAccordion30">
+                                    <div class="accordion-item">
+                                        <a href="{{ route('award', 'certificate') }}" class="accordion-link">
+                                            Certificate
+                                        </a>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <a href="{{ route('award', 'guest_awards') }}" class="accordion-link">
+                                            Guest Awards
+                                        </a>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <a href="{{ route('award', 'guest_lecture') }}" class="accordion-link">
+                                            Guest Lecture
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <a class="accordion-button without-icon" href="#">Award</a>
                     </div>
                     <div class="accordion-item">
                         <a class="accordion-button without-icon" href="{{ route('service') }}">Dental Services</a>

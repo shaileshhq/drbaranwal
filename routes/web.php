@@ -17,7 +17,7 @@ Route::get('/', 'App\Http\Controllers\FrontController@index')->name('index');
 Route::get('/about-us', 'App\Http\Controllers\FrontController@about')->name('about');
 Route::get('/services', 'App\Http\Controllers\FrontController@service')->name('service');
 Route::get('/gallery', 'App\Http\Controllers\FrontController@gallery')->name('gallery');
-Route::get('/awards', 'App\Http\Controllers\FrontController@award')->name('award');
+Route::get('/awards/{type}', 'App\Http\Controllers\FrontController@award')->name('award');
 Route::get('/blog', 'App\Http\Controllers\FrontController@blog')->name('blog');
 Route::get('/blog/{slug}', 'App\Http\Controllers\FrontController@blogDetail')->name('blog.detail');
 Route::get('/contact-us', 'App\Http\Controllers\FrontController@contact')->name('contact');

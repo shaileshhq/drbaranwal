@@ -76,6 +76,8 @@
                             <tr>
                                 <th>#</th>
                                 <th>Image</th>
+                                <th>Award Type</th>
+                                <th>Description</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -84,6 +86,8 @@
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
                                     <td><img src="{{ asset('public/storage/award/' . $item->image) }}" width="150"></td>
+                                    <td>{{ $item->award_type }}</td>
+                                    <td>{{ $item->description }}</td>
                                     <td>
                                         <div class="d-flex order-actions">
                                             <a href="{{ route('award.edit', $item->id) }}" class="">

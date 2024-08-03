@@ -16,18 +16,33 @@
             </div>
         </div>
         <!-- Breadcrumb End -->
-
-        <div class="about-wrap style-two ptb-100">
-            <div class="container">
-            <div class="row g-3">
-                @foreach ($award_list as $award)
-                    <div class="col-lg-3 col-6">
-                        <div class="testimonial-card style-three">
-                                <img src="{{ asset('public/storage/award/' . $award->image) }}" alt="Image">
+        @if($type != 'guest_lecture')
+            <div class="about-wrap style-two ptb-100">
+                <div class="container">
+                <div class="row g-3">
+                    @foreach ($award_list as $award)
+                        <div class="col-lg-3 col-6">
+                            <div class="testimonial-card style-three">
+                                    <img src="{{ asset('public/storage/award/' . $award->image) }}" alt="Image">
+                            </div>
                         </div>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
             </div>
-        </div>
+        @else
+            <div class="about-wrap style-two ptb-100">
+                <div class="container">
+                <div class="row g-3">
+                    @foreach ($award_list as $award)
+                        <div class="col-lg-3 col-6">
+                            <div class="testimonial-card style-three">
+                                    <img src="{{ asset('public/storage/award/' . $award->image) }}" alt="Image">
+                            </div>
+                            <p>{{$award->description}}</p>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        @endif
     </div>
 @endsection

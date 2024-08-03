@@ -15,6 +15,7 @@ class CreateAwardsTable extends Migration
     {
         Schema::create('awards', function (Blueprint $table) {
             $table->id();
+            $table->string('award_type')->nullable();
             $table->string('image')->nullable();
             $table->tinyInteger('status')->default('1');
             $table->timestamps();

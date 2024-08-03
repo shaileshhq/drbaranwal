@@ -31,9 +31,25 @@
                             @csrf
                             <div class="row">
                                 <div class="col-lg-6 mb-3">
+                                    <label for="inputProductTitle" class="form-label">Award Type</label>
+                                    <select class="single-select form-control" name="award_type">
+                                        <option value="">Select Award Type</option>
+                                        <option value="certificate"> Certificate</option>
+                                        <option value="guest_awards"> Guest Awards</option>
+                                        <option value="guest_lecture"> Guest Lecture</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 mb-3">
                                     <label for="formFile" class="form-label">Image</label>
                                     <input class="form-control" type="file" name="image" id="formFile">
                                     @error('image')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <label for="editor" class="form-label">Description</label>
+                                    <textarea class="form-control" name="description"></textarea>
+                                    @error('description')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>

@@ -38,9 +38,12 @@ class AwardController extends Controller
     {
         $request->validate([
             'image'  =>  'required|image|mimes:jpeg,png,jpg',
+            'description'   =>  'required',
         ]);
 
         $award = new Award;
+        $award->award_type = $request->award_type;
+        $award->description = $request->description;
         if($request->image){
             $file_photo = time().'-'.rand(111, 990).'.'.$request->image->extension();
             $request->image->storeAs('award', $file_photo, 'public');
@@ -84,8 +87,10 @@ class AwardController extends Controller
     {
         $request->validate([
             'image'   =>  'nullable|image|mimes:jpeg,png,jpg',
+            'description'   =>  'required',
         ]);
-        
+        $award->award_type = $request->award_type;
+        $award->description = $request->description;
         if($request->image){
             $file_photo = time().'-'.rand(111, 990).'.'.$request->image->extension();
             $request->image->storeAs('award', $file_photo, 'public');

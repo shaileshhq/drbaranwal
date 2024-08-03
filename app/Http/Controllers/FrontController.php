@@ -34,10 +34,11 @@ class FrontController extends Controller
         return view('frontend.service', compact('service_list'));
     }
 
-    public function award()
+    public function award($type)
     {
-        $award_list = Award::latest()->get();
-        return view('frontend.awards', compact('award_list'));
+       
+        $award_list = Award::where('award_type', $type)->latest()->get();
+        return view('frontend.awards', compact('award_list', 'type'));
     }
 
     public function gallery()
