@@ -71,7 +71,7 @@
             </a>
         </li>
         <li>
-            <a href="{{ route('appointment.index') }}">
+            <a href="{{ route('mission.index') }}">
                 <div class="parent-icon"><i class='bx bx-check-shield'></i>
                 </div>
                 <div class="menu-title">Our Mission</div>

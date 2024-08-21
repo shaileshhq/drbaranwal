@@ -8,6 +8,7 @@ use App\Http\Controllers\AwardController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\MissionController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\WebsiteSetupController;
@@ -37,6 +38,8 @@ Route::resource('/enquiry', EnquiryController::class);
 Route::resource('/appointment', AppointmentController::class);
 Route::resource('/website_setup', WebsiteSetupController::class);
 Route::resource('/team', TeamController::class);
+Route::resource('/mission', MissionController::class);
+
 });
 
 

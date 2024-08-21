@@ -9,7 +9,7 @@
                     <ol class="breadcrumb mb-0 p-0">
                         <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">All Team Member</li>
+                        <li class="breadcrumb-item active" aria-current="page">All Mission</li>
                     </ol>
                 </nav>
             </div>
@@ -60,11 +60,11 @@
             <div class="card-header">
                 <div class="row align-items-center">
                     <div class="col-lg-9 col-xl-10">
-                        <h3>Our Team</h3>
+                        <h3>Our Mission</h3>
                     </div>
                     <div class="col-lg-3 col-xl-2">
-                        <a href="{{ route('team.create') }}" class="btn btn-primary radius-30 mt-2 mt-lg-0"><i
-                                class="bx bxs-plus-square"></i>Add Team</a>
+                        <a href="{{ route('mission.create') }}" class="btn btn-primary radius-30 mt-2 mt-lg-0"><i
+                                class="bx bxs-plus-square"></i>Add Mission</a>
                     </div>
                 </div>
             </div>
@@ -75,24 +75,26 @@
                             <tr>
                                 <th>#</th>
                                 <th>Image</th>
-                                <th>Name</th>
-                                <th>Designation</th>
+                                <th>Icon</th>
+                                <th>Title</th>
+                                <th>Description</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($team as $key=>$item)
+                            @foreach ($mission as $key=>$item)
                                 <tr>
                                     <td>{{ $key+1 }}</td>
-                                    <td><img src="{{asset('public/storage/team/' .$item->image)}}" style="width:50px;"></td>
-                                    <td>{{ $item->name }}</td>
-                                    <td>{{$item->designation}}</td>
+                                    <td><img src="{{asset('public/storage/mission/' .$item->image)}}" style="width:50px;"></td>
+                                    <td><img src="{{asset('public/storage/mission/' .$item->icon)}}" style="width:50px;"></td>
+                                    <td>{{ $item->title }}</td>
+                                    <td>{{$item->description}}</td>
                                     <td>
                                         <div class="d-flex order-actions">
-                                            <a href="{{ route('team.edit', $item->id) }}" class="">
+                                            <a href="{{ route('mission.edit', $item->id) }}" class="">
                                                 <i class='bx bxs-edit'></i>
                                             </a>
-                                            <form action="{{ route('team.destroy', $item->id) }}" method="POST">
+                                            <form action="{{ route('mission.destroy', $item->id) }}" method="POST">
                                                 @method('Delete')
                                                 @csrf
                                                 <button type="submit" class="ms-1">

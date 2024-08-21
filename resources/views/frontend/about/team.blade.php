@@ -43,54 +43,20 @@
                 <div class="team-card-wrap">
                     <div class="team-slider swiper">
                         <div class="swiper-wrapper">
+                            @foreach($teams as $team)
                             <div class="swiper-slide">
                                 <div class="team-card style-two">
                                     <div class="team-img">
-                                        <img src="{{ asset('public/frontend_css/assets/img/team/team-10.webp') }}"
+                                        <img src="{{asset('public/storage/team/' .$team->image)}}"
                                             alt="Image">
                                     </div>
                                     <div class="team-info">
-                                        <h3><a href="#">Dr. A.K Baranwal</a></h3>
-                                        <span>Expert Dentist</span>
+                                        <h3><a href="#">{{$team->name}}</a></h3>
+                                        <span>{{$team->designation}}</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="team-card style-two">
-                                    <div class="team-img">
-                                        <img src="{{ asset('public/frontend_css/assets/img/team/team-10.webp') }}"
-                                            alt="Image">
-                                    </div>
-                                    <div class="team-info">
-                                        <h3><a href="#">Dr. A.K Baranwal</a></h3>
-                                        <span>Expert Dentist</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="team-card style-two">
-                                    <div class="team-img">
-                                        <img src="{{ asset('public/frontend_css/assets/img/team/team-10.webp') }}"
-                                            alt="Image">
-                                    </div>
-                                    <div class="team-info">
-                                        <h3><a href="#">Dr. A.K Baranwal</a></h3>
-                                        <span>Expert Dentist</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="team-card style-two">
-                                    <div class="team-img">
-                                        <img src="{{ asset('public/frontend_css/assets/img/team/team-10.webp') }}"
-                                            alt="Image">
-                                    </div>
-                                    <div class="team-info">
-                                        <h3><a href="#">Dr. A.K Baranwal</a></h3>
-                                        <span>Expert Dentist</span>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>

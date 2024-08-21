@@ -7,6 +7,7 @@ use App\Models\Award;
 use App\Models\Slider;
 use App\Models\Enquiry;
 use App\Models\Gallery;
+use App\Models\OurTeam;
 use App\Models\Service;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
@@ -116,6 +117,7 @@ class FrontController extends Controller
 
     public function team()
     {
-        return view('frontend.about.team');
+        $teams = OurTeam::latest()->get();
+        return view('frontend.about.team',compact('teams'));
     }
 }
