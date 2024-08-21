@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\LogoController;
+use App\Http\Controllers\TeamController;
 use App\Http\Controllers\AwardController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\EnquiryController;
@@ -35,6 +36,7 @@ Route::resource('/service', ServiceController::class);
 Route::resource('/enquiry', EnquiryController::class);
 Route::resource('/appointment', AppointmentController::class);
 Route::resource('/website_setup', WebsiteSetupController::class);
+Route::resource('/team', TeamController::class);
 });
 
 

@@ -1,3 +1,23 @@
+ <!-- Newsletter Start -->
+ <div class="newsletter-wrap style-one">
+    <div class="container">
+        <div class="newsletter-box ptb-100">
+            <img src="{{ asset('public/frontend_css/assets/img/newsletter-shape-1.webp')}}" alt="Image" class="newsletter-shape">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-4 col-lg-8 offset-lg-4">
+                    <div class="newsletter-content">
+                        <div class="content-title style-one">
+                            <h3 class="text-white">Our Future Goals<img src="{{ asset('public/frontend_css/assets/img/section-shape-3.webp')}}" alt="Image"></h3>
+                        <p>As the leading dental clinic in Varanasi, we have constantly attempted to serve our patients with the best treatment, comfortability, and care that we can provide them. Our future goals include further evolution in our cutting-edge technology & high end machines which embarks a new journey for dental innovation in Varanasi. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="newsletter-img" src="{{ asset('public/frontend_css/assets/img/newsletter-img-1.webp')}}" alt="Image">
+        </div>
+    </div>
+</div>
+<!-- Newsletter End -->
 <footer class="footer-wrap style-one">
     <div class="footer-top pt-100 pb-30">
         @if (websiteSetupValue('logo'))

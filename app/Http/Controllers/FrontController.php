@@ -108,4 +108,14 @@ class FrontController extends Controller
     {
         return view('frontend.terms');
     }
+
+    public function mission()
+    {
+        return view('frontend.about.mission');
+    }
+
+    public function team()
+    {
+        return view('frontend.about.team');
+    }
 }

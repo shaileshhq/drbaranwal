@@ -63,6 +63,20 @@
                 <div class="menu-title">Appointments</div>
             </a>
         </li>
+        <li>
+            <a href="{{ route('team.index') }}">
+                <div class="parent-icon"><i class='bx bx-check-shield'></i>
+                </div>
+                <div class="menu-title">Our Team</div>
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('appointment.index') }}">
+                <div class="parent-icon"><i class='bx bx-check-shield'></i>
+                </div>
+                <div class="menu-title">Our Mission</div>
+            </a>
+        </li>
         <li class="{{ Route::is('enquiry.index') ? 'mm-active' : '' }}">
             <a href="{{ route('enquiry.index') }}">
                 <div class="parent-icon"><i class='bx bx-user-voice'></i>

@@ -25,3 +25,6 @@ Route::post('/contact-store', 'App\Http\Controllers\FrontController@contactStore
 Route::post('/appointment-store', 'App\Http\Controllers\FrontController@appointment')->name('front.appointment.store');
 Route::get('/privacy-policy', 'App\Http\Controllers\FrontController@privacy')->name('privacy');
 Route::get('/terms-condition', 'App\Http\Controllers\FrontController@terms')->name('terms');
+Route::get('/our-mission', 'App\Http\Controllers\FrontController@mission')->name('mission');
+Route::get('/our-team', 'App\Http\Controllers\FrontController@team')->name('team');
+

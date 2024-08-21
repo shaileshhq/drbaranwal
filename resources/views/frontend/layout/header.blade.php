@@ -42,8 +42,23 @@
                                 <a href="{{route('index')}}" class="nav-link {{ Route::is('index') ? 'active' : '' }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('about')}}" class="nav-link" {{ Route::is('about') ? 'active' : '' }}>About Us</a>
+                                <a href="{{route('about')}}" class="dropdown-toggle nav-link" {{ Route::is('about') ? 'active' : '' }}>
+                                    About Us
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="{{route('mission')}}" class="nav-link {{ Route::is('mission') ? 'active' : '' }}">Our Mission</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('team')}}" class="nav-link {{ Route::is('team') ? 'active' : '' }}">
+                                           Our Team
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
+                            {{-- <li class="nav-item">
+                                <a href="{{route('about')}}" class="nav-link" {{ Route::is('about') ? 'active' : '' }}>About Us</a>
+                            </li> --}}
                             <li class="nav-item">
                                 <a href="{{ route('gallery') }}" class="nav-link {{ Route::is('gallery') ? 'active' : '' }}">Gallery</a>
                             </li>
