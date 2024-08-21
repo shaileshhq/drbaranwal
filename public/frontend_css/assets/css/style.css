@@ -1902,6 +1902,60 @@ select {
   margin: 0;
 }
 
+.mission-card{
+  text-align: center;
+  transition: var(--transition);
+  margin-bottom: 30px;
+  padding: 20px 8px;
+  border: 1px solid #ddd;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.mission-card span {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(50, 103, 255, 0.5);
+  background-color: var(--optionalColor);
+  margin: 0 auto 22px;
+  transition: var(--transition);
+}
+.mission-card span i {
+  color: var(--primaryColor);
+  display: block;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 0.7;
+  transition: var(--transition);
+}
+.mission-card h3 {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 14px;
+}
+.mission-card p {
+  padding: 0 16px;
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+.mission-card.style-two {
+  position: relative;
+  text-align: left;
+  padding-left: 50px;
+}
+.mission-card.style-two img {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.mission-card.style-two p {
+  padding: 0;
+  margin: 0;
+}
+
 /*--------------------------------------
         About CSS
 ----------------------------------------*/

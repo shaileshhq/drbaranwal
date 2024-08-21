@@ -74,7 +74,7 @@
                         <thead class="table-light">
                             <tr>
                                 <th>#</th>
-                                <th>Image</th>
+                                {{-- <th>Image</th> --}}
                                 <th>Icon</th>
                                 <th>Title</th>
                                 <th>Description</th>
@@ -85,7 +85,7 @@
                             @foreach ($mission as $key=>$item)
                                 <tr>
                                     <td>{{ $key+1 }}</td>
-                                    <td><img src="{{asset('public/storage/mission/' .$item->image)}}" style="width:50px;"></td>
+                                    {{-- <td><img src="{{asset('public/storage/mission/' .$item->image)}}" style="width:50px;"></td> --}}
                                     <td><img src="{{asset('public/storage/mission/' .$item->icon)}}" style="width:50px;"></td>
                                     <td>{{ $item->title }}</td>
                                     <td>{{$item->description}}</td>

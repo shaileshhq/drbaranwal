@@ -32,8 +32,7 @@
                             @method('PUT')
                             @csrf
                             <div class="row">
-
-                                <div class="col-lg-6 mb-3">
+                                {{-- <div class="col-lg-6 mb-3">
                                     <label for="formFile" class="form-label">Image</label>
                                     <input class="form-control" type="file" name="image" id="formFile">
                                     @error('image')
@@ -43,7 +42,7 @@
                                         <img src="{{ asset('public/storage/mission/' . $mission->image) }}" width="100%"
                                             height="100">
                                     </label>
-                                </div>
+                                </div> --}}
                                 <div class="col-lg-6 mb-3">
                                     <label for="formFile" class="form-label">Icon</label>
                                     <input class="form-control" type="file" name="icon" id="formFile">
@@ -55,7 +54,7 @@
                                             height="100">
                                     </label>
                                 </div>
-                                <div class="col-lg-12 mb-3">
+                                <div class="col-lg-6 mb-3">
                                     <label for="title" class="form-label">Title</label>
                                     <input type="text" class="form-control" name="title" id="title"
                                         placeholder="Enter Your Title" value="{{ $mission->title }}">

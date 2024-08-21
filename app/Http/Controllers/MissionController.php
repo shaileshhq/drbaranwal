@@ -40,18 +40,12 @@ class MissionController extends Controller
         $request->validate([
             'title'        =>  'required',
             'description'  =>  'required',
-            'image'        =>  'required|image|mimes:jpeg,png,jpg',
             'icon'         =>  'required|image|mimes:jpeg,png,jpg',
         ]);
 
         $mission = new OurMission;
         $mission->title        = $request->title;
         $mission->description  = $request->description;
-        if($request->image){
-            $file_photo = time().'-'.rand(111, 990).'.'.$request->image->extension();
-            $request->image->storeAs('mission', $file_photo, 'public');
-            $mission->image = $file_photo;
-        }
         if($request->icon){
             $file_image = time().'-'.rand(111, 990).'.'.$request->icon->extension();
             $request->icon->storeAs('mission', $file_image, 'public');
@@ -95,17 +89,11 @@ class MissionController extends Controller
         $request->validate([
             'title'        =>  'required',
             'description'  =>  'required',
-            'image'        =>  'nullable|image|mimes:jpeg,png,jpg',
             'icon'         =>  'nullable|image|mimes:jpeg,png,jpg',
         ]);
 
         $mission->title        = $request->title;
         $mission->description  = $request->description;
-        if($request->image){
-            $file_photo = time().'-'.rand(111, 990).'.'.$request->image->extension();
-            $request->image->storeAs('mission', $file_photo, 'public');
-            $mission->image = $file_photo;
-        }
         if($request->icon){
             $file_image = time().'-'.rand(111, 990).'.'.$request->icon->extension();
             $request->icon->storeAs('mission', $file_image, 'public');

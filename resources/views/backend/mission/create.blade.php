@@ -30,14 +30,13 @@
                         <form method="post" action="{{ route('mission.store') }}" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
-                                
-                                <div class="col-lg-6 mb-3">
+                                {{-- <div class="col-lg-6 mb-3">
                                     <label for="formFile" class="form-label">Image</label>
                                     <input class="form-control" type="file" name="image" id="formFile">
                                     @error('image')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
-                                </div>
+                                </div> --}}
                                 <div class="col-lg-6 mb-3">
                                     <label for="formFile" class="form-label">Icon</label>
                                     <input class="form-control" type="file" name="icon" id="formFile">

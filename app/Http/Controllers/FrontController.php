@@ -9,6 +9,7 @@ use App\Models\Enquiry;
 use App\Models\Gallery;
 use App\Models\OurTeam;
 use App\Models\Service;
+use App\Models\OurMission;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
 
@@ -112,7 +113,8 @@ class FrontController extends Controller
 
     public function mission()
     {
-        return view('frontend.about.mission');
+        $missions = OurMission::latest()->get();
+        return view('frontend.about.mission',compact('missions'));
     }
 
     public function team()
