@@ -238,7 +238,7 @@
                                 <h3>Make An <span>Appointment.</span></h3>
                                 <form action="#">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="name">Name*</label>   
                                                 <input type="text" id="name" placeholder="Name">
@@ -259,7 +259,7 @@
                                                 <i class="flaticon-phone-call"></i>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        {{-- <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="doc_name">Doctors*</label>   
                                                 <select name="doc_name" id="doc_name">
@@ -269,7 +269,7 @@
                                                     <option value="3">Jack Sparrow</option>
                                                 </select>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="app_date">Select Date*</label>   

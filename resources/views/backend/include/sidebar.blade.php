@@ -65,14 +65,14 @@
         </li>
         <li>
             <a href="{{ route('team.index') }}">
-                <div class="parent-icon"><i class='bx bx-check-shield'></i>
+                <div class="parent-icon"><i class='bx bx-user-plus'></i>
                 </div>
                 <div class="menu-title">Our Team</div>
             </a>
         </li>
         <li>
             <a href="{{ route('mission.index') }}">
-                <div class="parent-icon"><i class='bx bx-check-shield'></i>
+                <div class="parent-icon"><i class='bx bx-radio-circle-marked'></i>
                 </div>
                 <div class="menu-title">Our Mission</div>
             </a>
