@@ -12,6 +12,7 @@ use App\Models\Service;
 use App\Models\OurMission;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
+use App\Models\ServiceEnquiry;
 
 class FrontController extends Controller
 {
@@ -40,6 +41,31 @@ class FrontController extends Controller
     {
         $service_detail = Service::where('slug', $id)->firstOrFail();
         return view('frontend.service_detail', compact('service_detail'));
+    }
+
+    public function serviceStore(Request $request, $slug)
+    {
+        
+        $request->validate([
+            'name'      => 'required',
+            'phone'     => 'required|digits:10',
+            'email'     => 'required|email',
+            'purpose'   => 'required',
+            'message'   => 'required',
+        ]);
+        
+        $service_detail = Service::where('slug', $slug)->firstOrFail();
+        
+        $enquiry = new ServiceEnquiry;
+        $enquiry->service_id = $service_detail->id;
+        $enquiry->name = $request->name;
+        $enquiry->phone = $request->phone;
+        $enquiry->email = $request->email;
+        $enquiry->purpose = $request->purpose;
+        $enquiry->message = $request->message;
+        $enquiry->save();
+
+        return redirect()->route('service.detail', $slug)->with('success', 'Your enquiry hasbeen sent Successfully!');
     }
 
     public function award($type)

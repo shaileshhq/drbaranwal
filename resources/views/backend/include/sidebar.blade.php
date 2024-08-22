@@ -77,6 +77,13 @@
                 <div class="menu-title">Our Mission</div>
             </a>
         </li>
+        <li class="{{ Route::is('service-enquiry.index') ? 'mm-active' : '' }}">
+            <a href="{{ route('service-enquiry.index') }}">
+                <div class="parent-icon"><i class='bx bx-user-voice'></i>
+                </div>
+                <div class="menu-title">Service Enquiry</div>
+            </a>
+        </li>
         <li class="{{ Route::is('enquiry.index') ? 'mm-active' : '' }}">
             <a href="{{ route('enquiry.index') }}">
                 <div class="parent-icon"><i class='bx bx-user-voice'></i>

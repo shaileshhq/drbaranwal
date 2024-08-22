@@ -47,7 +47,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="{{route('mission')}}" class="nav-link {{ Route::is('mission') ? 'active' : '' }}">Our Mission</a>
+                                        <a href="{{route('mission')}}" class="nav-link {{ Route::is('mission') ? 'active' : '' }}">Vision - Mission</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="{{route('team')}}" class="nav-link {{ Route::is('team') ? 'active' : '' }}">

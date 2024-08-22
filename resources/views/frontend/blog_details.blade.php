@@ -41,7 +41,7 @@
                     </div>
                     <div class="col-lg-7">
                         <h1>{{ $blog_detail->title }}</h1>
-                        <button href="#" class="blog-date btn btn-success"><i class="flaticon-calendar"></i> {{ $blog_detail->created_at->format('d M Y') }}</button>
+                        <button href="#" class="btn btn-date"><i class="flaticon-calendar"></i> {{ $blog_detail->created_at->format('d M Y') }}</button>
                         <div class="single-para">
                             <p>{!! $blog_detail->description !!}</p>
                         </div>

@@ -12,6 +12,7 @@ use App\Http\Controllers\MissionController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\WebsiteSetupController;
+use App\Http\Controllers\ServiceEnquiryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,7 @@ Route::resource('/award', AwardController::class);
 Route::resource('/blog',BlogController::class);
 Route::resource('/service', ServiceController::class);
 Route::resource('/enquiry', EnquiryController::class);
+Route::resource('/service-enquiry', ServiceEnquiryController::class);
 Route::resource('/appointment', AppointmentController::class);
 Route::resource('/website_setup', WebsiteSetupController::class);
 Route::resource('/team', TeamController::class);
