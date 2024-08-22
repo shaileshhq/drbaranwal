@@ -18,7 +18,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="{{route('index')}}">
                         @if (websiteSetupValue('logo'))
@@ -83,7 +83,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="{{ route('service') }}" class="nav-link {{ Route::is('service') ? 'active' : '' }}">Dental Services</a>
+                                <a href="{{ route('service') }}" class="nav-link {{ Route::is('service') || Route::is('service.detail') ? 'active' : '' }}">Dental Services</a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('blog') }}" class="nav-link {{ Route::is('blog') || Route::is('blog.detail') ? 'active' : '' }}">Blog</a>

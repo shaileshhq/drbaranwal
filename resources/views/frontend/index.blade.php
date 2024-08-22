@@ -130,9 +130,9 @@
                                         <i class="flaticon-tooth-4"></i>
                                     </span>
                                     <span class="service-count">01</span>
-                                    <h3><a href="service-details.php">Dental Implants</a></h3>
+                                    <h3><a href="#">Dental Implants</a></h3>
                                     <p>Restore the function and aesthetics of your smile with our implant solutions.</p><br>
-                                    <a href="service-details.php" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
+                                    <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -141,9 +141,9 @@
                                         <i class="flaticon-tooth-3"></i>
                                     </span>
                                     <span class="service-count">02</span>
-                                    <h3><a href="service-details.php">Restorative Dentistry</a></h3>
+                                    <h3><a href="#">Restorative Dentistry</a></h3>
                                 <p>Repair and preserve damaged teeth with our restorative treatments.</p><br>
-                                    <a href="service-details.php" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
+                                    <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -152,9 +152,9 @@
                                         <i class="flaticon-tooth-1"></i>
                                     </span>
                                     <span class="service-count">03</span>
-                                    <h3><a href="service-details.php">Cosmetic Dentistry</a></h3>
+                                    <h3><a href="#">Cosmetic Dentistry</a></h3>
                                     <p>Achieve the smile you've always wanted with our cosmetic dental procedures.</p><br>
-                                    <a href="service-details.php" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
+                                    <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -163,9 +163,9 @@
                                         <i class="flaticon-tooth-2"></i>
                                     </span>
                                     <span class="service-count">04</span>
-                                    <h3><a href="service-details.php">Root Canal Treatment</a></h3>
+                                    <h3><a href="#">Root Canal Treatment</a></h3>
                                     <p>Relieve pain and save your natural tooth with our advanced root canal therapy.</p>
-                                    <a href="service-details.php" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
+                                    <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                         <div class="service-next next-btn"><img src="{{ asset('public/frontend_css/assets/img/right-arrow.svg')}}" alt="Image"></div>
                     </div>
                 </div>
-                <p class="section-subtitle style-two mt-50 d-block w-100 text-center">Click any of the above services to learn more <a href="service-details.php" class="link-one">View Our All Services</a></p>
+                <p class="section-subtitle style-two mt-50 d-block w-100 text-center">Click any of the above services to learn more <a href="#" class="link-one">View Our All Services</a></p>
             </div>
         </div>
         <!-- Service Section End -->
@@ -411,7 +411,6 @@
             </div>
         </div>
         <!-- CTA Section End -->
-
 
         <!-- Testimonial Section Start -->
         <div class="testimonial-wrap style-one pt-100 pb-75">

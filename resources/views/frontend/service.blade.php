@@ -11,7 +11,7 @@
                 <div class="breadcrumb-content">
                     <h2>Our Services</h2>
                     <ul class="breadcrumb-menu list-style">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="{{route('index')}}">Home</a></li>
                         <li>Our Services</li>
                     </ul>
                 </div>
@@ -33,7 +33,7 @@
                                 {{-- <img src="{{ asset('public/frontend_css/assets/img/services/service-card-shape.webp')}}" alt="Image" class="service-card-shape"> --}}
                                 <h3><a href="#">{{ $service->title }}</a></h3>
                                 <p>{{ $service->short_desc }}</p>
-                                {{-- <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a> --}}
+                                <a href="{{route('service.detail', $service->slug)}}" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
                             </div>
                         </div>
                     </div>

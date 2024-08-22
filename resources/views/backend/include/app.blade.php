@@ -55,6 +55,35 @@
     <script src="{{ asset('backend_css/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js') }}"></script>
     <!--app JS-->
     <script src="{{ asset('backend_css/assets/js/app.js') }}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.ck_editor').summernote({
+                //placeholder: 'Hello stand alone ui',
+                tabsize: 2,
+                height: 250,
+                toolbar: [
+                    ['headings', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'clear']],
+                    ['fontname', ['fontname']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'hr', 'video']],
+                    ['view', ['fullscreen', 'codeview']],
+                    ['help', ['help']],
+                    ['fontsize', ['fontsize']]
+                ],
+                fontNames: ['Kokila', 'Mangal', 'Noto Sans Devanagari', 'Arial', 'Arial Black',
+                    'Comic Sans MS', 'Courier New', 'Merriweather'
+                ],
+                fontNamesIgnoreCheck: ['Kokila', 'Mangal', 'Noto Sans Devanagari'],
+                fontSize: ['8', '10', '12', '14', '18', '24', '36'],
+            });
+        });
+    </script>
 </body>
 
 </html>

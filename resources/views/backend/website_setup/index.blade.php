@@ -112,7 +112,7 @@
                                 </div>
                                 <div class="col-lg-12 mb-3">
                                     <label for="aboutUs" class="form-label">About Us</label>
-                                    <textarea class="form-control" id="editor" name="aboutUs">{{ websiteSetupValue('aboutUs') }}</textarea>
+                                    <textarea class="form-control ck_editor" id="editor" name="aboutUs">{{ websiteSetupValue('aboutUs') }}</textarea>
                                     <input type="hidden" name="type[]" value="aboutUs">
 
                                 </div>
@@ -127,8 +127,8 @@
         </div>
     </div>
 @endsection
-@push('scripts')
+{{-- @push('scripts')
     <script>
         CKEDITOR.replace('editor');
     </script>
-@endpush
+@endpush --}}

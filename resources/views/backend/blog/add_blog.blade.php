@@ -52,7 +52,7 @@
 
                                 <div class="col-lg-12 mb-3">
                                     <label for="editor" class="form-label">Description</label>
-                                    <textarea class="form-control" id="editor" name="description"></textarea>
+                                    <textarea class="form-control ck_editor" id="editor" name="description"></textarea>
                                     @error('description')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
@@ -68,8 +68,8 @@
         </div>
     </div>
 @endsection
-@push('scripts')
+{{-- @push('scripts')
     <script>
         CKEDITOR.replace('editor');
     </script>
-@endpush
+@endpush --}}

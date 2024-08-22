@@ -88,7 +88,7 @@ input:checked + .slider:before {
 }
 .theme-light .navbar-brand .logo-light {
   display: block !important;
-  height: 55px;
+  height: 60px;
 }
 .theme-light .footer-logo .logo-dark {
   display: none !important;

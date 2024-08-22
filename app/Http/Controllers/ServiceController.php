@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Service;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -44,6 +45,7 @@ class ServiceController extends Controller
 
         $service = new Service;
         $service->title = $request->title;
+        $service->slug = Str::slug($request->title);
         $service->short_desc = $request->short_desc;
         if($request->image){
             $file_photo = time().'-'.rand(111, 990).'.'.$request->image->extension();
@@ -93,6 +95,7 @@ class ServiceController extends Controller
         ]);
 
         $service->title = $request->title;
+        $service->slug = Str::slug($request->title);
         $service->short_desc = $request->short_desc;
         if($request->image){
             $file_photo = time().'-'.rand(111, 990).'.'.$request->image->extension();

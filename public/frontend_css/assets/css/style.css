@@ -5699,6 +5699,56 @@ width: 1px;
   letter-spacing: 0.03em;
   padding-right: 10px;
 }
+.call-help-support {
+  align-items: center;
+  bottom: 80px;
+  display: flex;
+  justify-content: center;
+  left: 10px;
+  position: fixed;
+  z-index: 999;
+}
+.call-help-support .support {
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 3px 8px #0000003d;
+  height: 60px;
+  padding: 10px;
+  width: 60px;
+}
+.support img {
+  border-radius: 100%;
+  height: auto;
+  width: 100%;
+}
+.call-help-support .toast {
+  background-color: #fff;
+  border: 0;
+  color: #000;
+  margin-left: 10px;
+  width: fit-content;
+  border-radius: 4px;
+}
+.call-help-support .toast:before {
+  border: 12px solid #0000;
+  border-top-color: #fff;
+  content: "";
+  position: absolute;
+  right: 99px;
+  top: 18px;
+  transform: rotate(90deg);
+}
+.call-help-support .toast .toast-body {
+  padding: 7px;
+}
+.call-help-support .toast button {
+  background: #fff;
+  border: 0;
+  color: #000;
+  margin-left: 4px;
+  padding: 0;
+}
+
 .need-help-support {
   align-items: center;
   bottom: 10px;

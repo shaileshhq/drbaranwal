@@ -48,6 +48,22 @@
             </div>
         </div>
     @endif
+    @if(websiteSetupValue('contact'))
+    <div class="call-help-support">
+        <a href="tel:{{ websiteSetupValue('contact') }}" rel="noreferrer" target="_blank"
+            class="support">
+            <img src="{{ asset('public/frontend_css/assets/img/phone-call.png')}}" alt="support" />
+        </a>
+        {{-- <div class="toast show" id="toast">
+            <div class="toast-body">
+                <span class="text-dark">Need Help?</span>
+                <button type="button" id="hideToast" data-dismiss="toast">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        </div> --}}
+    </div>
+    @endif
 
     <!-- Appointment -->
     <div class="modal fade appointmentModal" id="appointment" data-bs-backdrop="static" data-bs-keyboard="false"

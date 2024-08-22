@@ -9,8 +9,8 @@
                 <div class="breadcrumb-content">
                     <h2>Blog Details</h2>
                     <ul class="breadcrumb-menu list-style">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="blog.php">Blog</a></li>
+                        <li><a href="{{route('index')}}">Home</a></li>
+                        <li><a href="{{route('blog')}}">Blog</a></li>
                         <li>Blog Details</li>
                     </ul>
                 </div>
@@ -22,7 +22,7 @@
         <div class="blog-details-wrap ptb-100">
             <div class="container">
                 <div class="row gx-5">
-                    <div class="col-xl-10 offset-xl-1">
+                    {{-- <div class="col-xl-10 offset-xl-1">
                         <article>
                             <h1>{{ $blog_detail->title }}</h1>
                             <div class="single-img mt-30">
@@ -33,6 +33,18 @@
                                 <p>{!! $blog_detail->description !!}</p>
                             </div>
                         </article>
+                    </div> --}}
+                    <div class="col-lg-5">
+                        <div class="single-img">
+                            <img src="{{ asset('public/storage/blog/' . $blog_detail->image) }}" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <h1>{{ $blog_detail->title }}</h1>
+                        <button href="#" class="blog-date btn btn-success"><i class="flaticon-calendar"></i> {{ $blog_detail->created_at->format('d M Y') }}</button>
+                        <div class="single-para">
+                            <p>{!! $blog_detail->description !!}</p>
+                        </div>
                     </div>
                 </div>
             </div>

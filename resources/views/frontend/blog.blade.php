@@ -9,7 +9,7 @@
                 <div class="breadcrumb-content">
                     <h2>Blog</h2>
                     <ul class="breadcrumb-menu list-style">
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="{{route('index')}}">Home</a></li>
                         <li>Blog</li>
                     </ul>
                 </div>

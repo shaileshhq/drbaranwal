@@ -36,6 +36,12 @@ class FrontController extends Controller
         return view('frontend.service', compact('service_list'));
     }
 
+    public function serviceDetail($id)
+    {
+        $service_detail = Service::where('slug', $id)->firstOrFail();
+        return view('frontend.service_detail', compact('service_detail'));
+    }
+
     public function award($type)
     {
        
