@@ -55,12 +55,12 @@
                             <li><a href="{{ route('about') }}"><i class="ri-arrow-right-double-line"></i>About Us</a></li>
                             <li><a href="{{ route('service') }}"><i class="ri-arrow-right-double-line"></i>Services</a></li>
                             <li><a href="{{ route('gallery') }}"><i class="ri-arrow-right-double-line"></i>Gallery</a></li>
-                            <li><a href="#"><i class="ri-arrow-right-double-line"></i>Blog</a></li>
-                            <li><a href="#"><i class="ri-arrow-right-double-line"></i>Contact Us</a></li>
-                            <li><a href="#"><i class="ri-arrow-right-double-line"></i>Make An Appointment</a></li>
-                            <li><a href="#"><i class="ri-arrow-right-double-line"></i>Faq</a></li>
+                            <li><a href="{{route('blog')}}"><i class="ri-arrow-right-double-line"></i>Blog</a></li>
+                            <li><a href="{{route('contact')}}"><i class="ri-arrow-right-double-line"></i>Contact Us</a></li>
+                            <li><a href="#appointment"><i class="ri-arrow-right-double-line"></i>Make An Appointment</a></li>
+                            {{-- <li><a href="#"><i class="ri-arrow-right-double-line"></i>Faq</a></li>
                             <li><a href="#"><i class="ri-arrow-right-double-line"></i>Privacy Policy</a></li>
-                            <li><a href="#"><i class="ri-arrow-right-double-line"></i>Terms & Condition</a></li>
+                            <li><a href="#"><i class="ri-arrow-right-double-line"></i>Terms & Condition</a></li> --}}
                         </ul>
                     </div>
                 </div>

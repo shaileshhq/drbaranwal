@@ -15,7 +15,7 @@
                             <span><img src="{{ asset('public/frontend_css/assets/img/section-shape.svg')}}" alt="Image">Dental Care For Everyone</span>
                             <h1>Dr A K Baranwal <br><span> BDS, MDS (Gold medalist)!</span></h1>
                           <p>Discover the path to your perfect smile with the premier dental experts at Dr A.K Baranwal Dentistry. Our skilled team is dedicated to delivering exceptional results and personalized care, ensuring your journey to a radiant smile.</p>
-                          <a href="contact.php" class="btn-two">Make An Appointment</a>
+                          <a href="#appointment" class="btn-two">Make An Appointment</a>
                         </div>
                     </div>
                     <div class="col-xl-5 col-lg-6">
@@ -99,7 +99,7 @@
                                         <p>Our core values and the other is the commitments we live by. We welcome you to give us feedback on how well we do and honor both.</p>
                                     </div>
                                 </div>
-                                <a href="contact.php" class="btn-two">Make An Appointment<i class="flaticon-right-arrow"></i></a>
+                                <a href="#appointment" class="btn-two">Make An Appointment<i class="flaticon-right-arrow"></i></a>
                             </div>
                         </div>
                     </div>
@@ -132,7 +132,7 @@
                                     <span class="service-count">01</span>
                                     <h3><a href="#">Dental Implants</a></h3>
                                     <p>Restore the function and aesthetics of your smile with our implant solutions.</p><br>
-                                    <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
+                                    {{-- <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a> --}}
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -143,7 +143,7 @@
                                     <span class="service-count">02</span>
                                     <h3><a href="#">Restorative Dentistry</a></h3>
                                 <p>Repair and preserve damaged teeth with our restorative treatments.</p><br>
-                                    <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
+                                    {{-- <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a> --}}
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -154,7 +154,7 @@
                                     <span class="service-count">03</span>
                                     <h3><a href="#">Cosmetic Dentistry</a></h3>
                                     <p>Achieve the smile you've always wanted with our cosmetic dental procedures.</p><br>
-                                    <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
+                                    {{-- <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a> --}}
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -165,7 +165,7 @@
                                     <span class="service-count">04</span>
                                     <h3><a href="#">Root Canal Treatment</a></h3>
                                     <p>Relieve pain and save your natural tooth with our advanced root canal therapy.</p>
-                                    <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a>
+                                    {{-- <a href="#" class="btn-three">Read More<i class="flaticon-right-arrow"></i></a> --}}
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                         <div class="service-next next-btn"><img src="{{ asset('public/frontend_css/assets/img/right-arrow.svg')}}" alt="Image"></div>
                     </div>
                 </div>
-                <p class="section-subtitle style-two mt-50 d-block w-100 text-center">Click any of the above services to learn more <a href="#" class="link-one">View Our All Services</a></p>
+                <p class="section-subtitle style-two mt-50 d-block w-100 text-center">Click any of the above services to learn more <a href="{{route('service')}}" class="link-one">View Our All Services</a></p>
             </div>
         </div>
         <!-- Service Section End -->
@@ -227,7 +227,7 @@
         <!-- Why Choose Us Section End -->
 
         <!-- Appointment Section Start -->
-        <div class="appointment-wrap style-one pt-100">
+        <div class="appointment-wrap style-one pt-100" id="appointment">
             <div class="appointment-bg bg-f"></div>
             <div class="container">
                 <div class="appointment-box">
@@ -407,7 +407,7 @@
             <div class="container text-center">
                 <h4>Have Any Questions Feel Free to Contact with Our Team</h4>
                 <a class="cta-contact" href="tel:+91-8318097225">+91-8318097225</a>
-                <a href="contact.php" class="btn-two">Contact Us</a>
+                <a href="{{route('contact')}}" class="btn-two">Contact Us</a>
             </div>
         </div>
         <!-- CTA Section End -->
