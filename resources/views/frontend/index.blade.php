@@ -236,51 +236,41 @@
                         <div class="col-lg-6">
                             <div class="appointment-form">
                                 <h3>Make An <span>Appointment.</span></h3>
-                                <form action="#">
+                                <form action="{{route('front.appointment.store')}}" method="POST">
+                                    @csrf
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="name">Name*</label>   
-                                                <input type="text" id="name" placeholder="Name">
+                                                <input type="text" id="name" placeholder="Name" name="name">
                                                 <i class="flaticon-user"></i>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="app_email">Email*</label>   
-                                                <input type="email" id="app_email" placeholder="Email">
+                                                <input type="email" id="app_email" placeholder="Email" name="email">
                                                 <i class="flaticon-mail"></i>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="app_phone">Phone</label>   
-                                                <input type="number" id="app_phone" placeholder="Name">
+                                                <label for="app_phone">Phone*</label>   
+                                                <input type="number" id="app_phone" placeholder="Phone" name="phone">
                                                 <i class="flaticon-phone-call"></i>
                                             </div>
                                         </div>
-                                        {{-- <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="doc_name">Doctors*</label>   
-                                                <select name="doc_name" id="doc_name">
-                                                    <option value="0">Doctors</option>
-                                                    <option value="1">Jackson Mateo</option>
-                                                    <option value="2">Mahito Hiasho</option>
-                                                    <option value="3">Jack Sparrow</option>
-                                                </select>
-                                            </div>
-                                        </div> --}}
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="app_date">Select Date*</label>   
-                                                <input type="date" id="app_date">
+                                                <input type="date" id="app_date" name="date">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="app_time">Select Time*</label>   
-                                                <select name="app_time" id="app_time">
-                                                    <option value="0">Select Time</option>
+                                                <select id="app_time" name="time">
+                                                    <option value="">--Select Time--</option>
                                                     <option value="1">9:00 Am - 10:00 Am</option>
                                                     <option value="2">10:00 Am - 11:00 Am</option>
                                                     <option value="3">11:00 Am - 12:00 Pm</option>
@@ -360,42 +350,17 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
+                    @foreach($teams as $team)
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="team-card style-one">
                             <img src="{{ asset('public/frontend_css/assets/img/team/team-1.webp')}}" alt="Image">
                             <div class="team-info">
-                                <h3><a href="#">Dr A.K Baranwal</a></h3>
-                                <span>Expert Dentist</span>
+                                <h3><a href="#">{{$team->name}}</a></h3>
+                                <span>{{$team->designation}}</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="team-card style-one">
-                            <img src="{{ asset('public/frontend_css/assets/img/team/team-1.webp')}}" alt="Image">
-                            <div class="team-info">
-                                <h3><a href="#">Dr A.K Baranwal</a></h3>
-                                <span>Dental Assistant</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="team-card style-one">
-                            <img src="{{ asset('public/frontend_css/assets/img/team/team-1.webp')}}" alt="Image">
-                            <div class="team-info">
-                                <h3><a href="#">Dr A.K Baranwal</a></h3>
-                                <span>Dental Hygenist</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="team-card style-one">
-                            <img src="{{ asset('public/frontend_css/assets/img/team/team-1.webp')}}" alt="Image">
-                            <div class="team-info">
-                                <h3><a href="#">Dr A.K Baranwal</a></h3>
-                                <span>Expert Dentist</span>
-                            </div>
-                        </div>
-                    </div>
+                   @endforeach
                 </div>
             </div>
         </div>

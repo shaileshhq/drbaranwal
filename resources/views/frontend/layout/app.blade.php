@@ -139,12 +139,14 @@
     </button>
 
     <!-- Link of JS files -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="{{ asset('public/frontend_css/assets/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{ asset('public/frontend_css/assets/js/swiper.bundle.min.js')}}"></script>
     <script src="{{ asset('public/frontend_css/assets/js/aos.js')}}"></script>
     <script src="{{ asset('public/frontend_css/assets/js/fslightbox.js')}}"></script>
     <script src="{{ asset('public/frontend_css/assets/js/main.js')}}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <script>
         $(function() {
             $(document).ready(function() {

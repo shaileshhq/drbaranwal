@@ -18,12 +18,13 @@ class FrontController extends Controller
 {
     public function index()
     {
-        $slider_list = Slider::orderBy('id', 'desc')->get();
-        $award_list = Award::orderBy('id', 'desc')->get();
-        $service_list = Service::orderBy('id', 'desc')->take(4)->get();
-        $blog_list = Blog::orderBy('id', 'desc')->get();
-        $gallery_list = Gallery::latest()->latest()->inRandomOrder()->take(8)->get();
-        return view('frontend.index', compact('slider_list', 'award_list', 'service_list', 'blog_list', 'gallery_list'));
+        $slider_list    = Slider::orderBy('id', 'desc')->get();
+        $award_list     = Award::orderBy('id', 'desc')->get();
+        $service_list   = Service::orderBy('id', 'desc')->take(4)->get();
+        $blog_list      = Blog::orderBy('id', 'desc')->get();
+        $teams          = OurTeam::latest()->get();
+        $gallery_list   = Gallery::latest()->latest()->inRandomOrder()->take(8)->get();
+        return view('frontend.index', compact('slider_list', 'award_list', 'service_list', 'blog_list', 'gallery_list','teams'));
     }
 
     public function about()
@@ -122,13 +123,19 @@ class FrontController extends Controller
 
     public function appointment(Request $request)
     {
+        $request->validate([
+            'name'      => 'required',
+            'phone'     => 'required|digits:10',
+            'email'     => 'required|email',
+            'date'      => 'required',
+            'time'      => 'required',
+        ]);
         $appointment = new Appointment;
-        $appointment->name = $request->name;
-        $appointment->phone = $request->phone;
-        $appointment->email = $request->email;
-        $appointment->time = $request->time;
-        $appointment->message = $request->message;
-
+        $appointment->name      = $request->name;
+        $appointment->phone     = $request->phone;
+        $appointment->email     = $request->email;
+        $appointment->date      = $request->date;
+        $appointment->time      = $request->time;
         $appointment->save();
         return redirect()->route('index')->with('success', 'Your appointment has been sent successfully!');
     }

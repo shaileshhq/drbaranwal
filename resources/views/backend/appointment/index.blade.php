@@ -60,7 +60,7 @@
                                 <th>Phone</th>
                                 <th>Email</th>
                                 <th>Appointment Date</th>
-                                <th>Message</th>
+                                <th>Time</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -71,8 +71,8 @@
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->phone }}</td>
                                     <td>{{ $item->email }}</td>
+                                    <td>{{ $item->date }}</td>
                                     <td>{{ $item->time }}</td>
-                                    <td>{{ $item->message }}</td>
                                     <td>
                                         <div class="d-flex order-actions">
                                             <form action="{{route('appointment.destroy', $item->id)}}" method="POST">
