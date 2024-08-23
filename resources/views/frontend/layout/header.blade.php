@@ -7,7 +7,7 @@
                         <div class="col-lg-9">
                             <ul class="contact-info list-style">
                                 <li><i class="flaticon-mail"></i><a href="mailto:{{ websiteSetupValue('email') }}"><span>{{ websiteSetupValue('email') }}</span></a></li>
-                                <li><i class="flaticon-pin"></i><span>{{ websiteSetupValue('address') }}</span></li>
+                                {{-- <li><i class="flaticon-pin"></i><span>{{ websiteSetupValue('address') }}</span></li> --}}
                             </ul>
                         </div>
                         <div class="col-lg-3">
