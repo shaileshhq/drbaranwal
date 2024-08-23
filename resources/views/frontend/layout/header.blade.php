@@ -4,13 +4,13 @@
             <div class="header-top">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-9">
+                        <div class="col-lg-6">
                             <ul class="contact-info list-style">
                                 <li><i class="flaticon-mail"></i><a href="mailto:{{ websiteSetupValue('email') }}"><span>{{ websiteSetupValue('email') }}</span></a></li>
                                 {{-- <li><i class="flaticon-pin"></i><span>{{ websiteSetupValue('address') }}</span></li> --}}
                             </ul>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-6">
                             <ul class="contact-info text-lg-end list-style">
                                 <li><i class="flaticon-clock"></i>Mon - Sat: 09.00 to 18.00, Sunday: Closed</li>
                             </ul>
