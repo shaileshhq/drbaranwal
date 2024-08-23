@@ -51,7 +51,7 @@
                                 <li>Professional Staff</li>
                                 <li>Fair Prices</li>
                             </ul>
-                            <a href="book-appointment.html" class="btn-two">Make an Appointment</a>
+                            <a href="{{route('index')}}#appointment" class="btn-two">Make an Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                         <div class="sidebar">
                             <div class="sidebar-widget style-two">
                                 <div class="single-team-widget">
-                                    <img src="{{ asset('public/frontend_css/assets/img/team/single-team.webp')}}" alt="Image">
+                                    <img src="{{ asset('public/frontend_css/assets/img/team/profile.jpeg')}}" alt="Image">
                                     <div class="single-team-info">
                                         <h3>Dr. A.K Baranwal</h3>
                                         <span>B.DS, M.D.S.(Gold Medalist)</span>
@@ -125,7 +125,7 @@
                             <div class="single-para">
                                 <h2>Meet Our Certified & Experienced Dentist</h2>
                                 <p>We are proud to introduce Dr. AK Baranwal, our senior consultant specializing in endodontics, cosmetic dentistry, and dental implants. With a distinguished background including roles as Senior Resident at IMS, BHU. Dr. Baranwal brings extensive expertise to our practice. His dedication to precision and patient care ensures that every individual receives comprehensive and compassionate dental treatment.</p>
-                                <a href="#" class="btn-two">Make an Appointment</a>
+                                <a href="{{route('index')}}#appointment" class="btn-two">Make an Appointment</a>
                             </div>
                         </div>
                     </div>
@@ -152,50 +152,19 @@
                     <div class="team-card-wrap">
                         <div class="team-slider swiper">
                             <div class="swiper-wrapper">
+                                @foreach($teams as $team)
                                 <div class="swiper-slide">
                                     <div class="team-card style-two">
                                         <div class="team-img">
-                                            <img src="{{ asset('public/frontend_css/assets/img/team/team-10.webp')}}" alt="Image">
+                                            <img src="{{asset('public/storage/team/' .$team->image)}}" alt="Image">
                                         </div>
                                         <div class="team-info">
-                                            <h3><a href="#">Dr. A.K Baranwal</a></h3>
-                                            <span>Expert Dentist</span>
+                                            <h3><a href="#">{{$team->name}}</a></h3>
+                                            <span>{{$team->designation}}</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="team-card style-two">
-                                        <div class="team-img">
-                                            <img src="{{ asset('public/frontend_css/assets/img/team/team-10.webp')}}" alt="Image">
-                                        </div>
-                                        <div class="team-info">
-                                        <h3><a href="#">Dr. A.K Baranwal</a></h3>
-                                        <span>Expert Dentist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="team-card style-two">
-                                        <div class="team-img">
-                                            <img src="{{ asset('public/frontend_css/assets/img/team/team-10.webp')}}" alt="Image">
-                                        </div>
-                                        <div class="team-info">
-                                        <h3><a href="#">Dr. A.K Baranwal</a></h3>
-                                        <span>Expert Dentist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="team-card style-two">
-                                        <div class="team-img">
-                                            <img src="{{ asset('public/frontend_css/assets/img/team/team-10.webp')}}" alt="Image">
-                                        </div>
-                                        <div class="team-info">
-                                        <h3><a href="#">Dr. A.K Baranwal</a></h3>
-                                        <span>Expert Dentist</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -203,7 +172,7 @@
             </div>
         </div>
          <!-- End Team -->
-                  <!-- Testimonial Section Start -->
+         <!-- Testimonial Section Start -->
         <div class="testimonial-wrap style-one ptb-100">
             <img src="{{ asset('public/frontend_css/assets/img/shape-2.webp')}}" alt="Image" class="testimonial-shape-one moveHorizontal sm-none">
             <img src="{{ asset('public/frontend_css/assets/img/bg-shape-1.webp')}}" alt="Image" class="testimonial-bg-shape">
@@ -275,5 +244,4 @@
             </div>
         </div>
         <!-- Testimonial Section End -->
-      
 @endsection

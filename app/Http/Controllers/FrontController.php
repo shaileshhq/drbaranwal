@@ -29,7 +29,8 @@ class FrontController extends Controller
 
     public function about()
     {
-        return view('frontend.about');
+        $teams = OurTeam::latest()->get();
+        return view('frontend.about', compact('teams'));
     }
 
     public function service()

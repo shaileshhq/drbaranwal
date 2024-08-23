@@ -128,7 +128,30 @@
                         <a class="accordion-button without-icon" href="{{ route('index') }}"> Home</a>
                     </div>
                     <div class="accordion-item">
-                        <a class="accordion-button without-icon" href="{{ route('about') }}">About Us</a>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            About Us
+                        </button>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#navbarAccordion">
+                            <div class="accordion-body">
+                                <div class="accordion" id="navbarAccordion30">
+                                    <div class="accordion-item">
+                                        <a href="{{route('about')}}" class="accordion-link">
+                                            About
+                                        </a>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <a href="{{route('mission')}}" class="accordion-link">
+                                            Vision-Mission
+                                        </a>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <a href="{{route('team')}}" class="accordion-link">
+                                            our Team
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="accordion-item">
                         <a class="accordion-button without-icon" href="{{ route('gallery') }}">Gallery</a>

@@ -353,7 +353,7 @@
                     @foreach($teams as $team)
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="team-card style-one">
-                            <img src="{{ asset('public/frontend_css/assets/img/team/team-1.webp')}}" alt="Image">
+                            <img src="{{asset('public/storage/team/' .$team->image)}}" alt="Image">
                             <div class="team-info">
                                 <h3><a href="#">{{$team->name}}</a></h3>
                                 <span>{{$team->designation}}</span>
