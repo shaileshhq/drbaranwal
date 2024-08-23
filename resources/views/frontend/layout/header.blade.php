@@ -2,15 +2,15 @@
      <!-- Start Navbar Area -->
         <div class="navbar-area style-one" id="navbar">
             <div class="header-top">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-lg-9">
                             <ul class="contact-info list-style">
                                 <li><i class="flaticon-mail"></i><a href="mailto:{{ websiteSetupValue('email') }}"><span>{{ websiteSetupValue('email') }}</span></a></li>
-                                <li><i class="flaticon-pin"></i>Mahamoorganj, Varanasi(U.P) Pin- 221010</li>
+                                <li><i class="flaticon-pin"></i><span>{{ websiteSetupValue('address') }}</span></li>
                             </ul>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-3">
                             <ul class="contact-info text-lg-end list-style">
                                 <li><i class="flaticon-clock"></i>Mon - Sat: 09.00 to 18.00, Sunday: Closed</li>
                             </ul>

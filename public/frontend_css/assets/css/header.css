@@ -1,9 +1,11 @@
 .navbar-area .header-top .contact-info li {
   display: inline-block;
-  margin-right: 55px;
+  margin-right: 20px;
   position: relative;
-  padding-left: 30px;
+  padding-left: 25px;
   color: var(--offwhiteColor);
+  font-size:12px;
+  font-weight:500;
 }
 .navbar-area .header-top .contact-info li i {
   position: absolute;

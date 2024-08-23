@@ -271,9 +271,9 @@
                                                 <label for="app_time">Select Time*</label>   
                                                 <select id="app_time" name="time">
                                                     <option value="">--Select Time--</option>
-                                                    <option value="1">9:00 Am - 10:00 Am</option>
-                                                    <option value="2">10:00 Am - 11:00 Am</option>
-                                                    <option value="3">11:00 Am - 12:00 Pm</option>
+                                                    <option value="9:00 Am - 10:00 Am">9:00 Am - 10:00 Am</option>
+                                                    <option value="10:00 Am - 11:00 Am">10:00 Am - 11:00 Am</option>
+                                                    <option value="11:00 Am - 12:00 Pm">11:00 Am - 12:00 Pm</option>
                                                 </select>
                                             </div>
                                         </div>
