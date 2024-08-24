@@ -88,10 +88,6 @@
                                  <li><a href="{{ websiteSetupValue('instagram') }}" target="_blank"><i
                                              class="ri-instagram-line"></i></a></li>
                              @endif
-                             @if (websiteSetupValue('linkedin'))
-                                 <li><a href="{{ websiteSetupValue('linkedin') }}" target="_blank"><i
-                                             class="ri-linkedin-fill"></i></a></li>
-                             @endif
                              @if (websiteSetupValue('youtube'))
                                  <li><a href="{{ websiteSetupValue('youtube') }}" target="_blank"><i
                                              class="ri-youtube-fill"></i></a></li>

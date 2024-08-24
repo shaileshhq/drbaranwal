@@ -8,7 +8,7 @@
                         <li><i class="flaticon-mail"></i><a
                                 href="mailto:{{ websiteSetupValue('email') }}"><span>{{ websiteSetupValue('email') }}</span></a>
                         </li>
-                        <li><i class="flaticon-pin"></i><span>{{ websiteSetupValue('address') }}</span></li>
+                        <li><i class="flaticon-pin"></i><span>Mahmoorganj, Varanasi, Uttar Pradesh 221010</span></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
@@ -288,10 +288,21 @@
                 </li>
             </ul>
             <ul class="social-profile list-style">
-                <li><a href="https://www.fb.com/" target="_blank"><i class="ri-facebook-fill"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a></li>
-                <li><a href="https://www.linkedin.com/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-                <li><a href="https://www.twitter.com/" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                @if (websiteSetupValue('facebook'))
+                <li><a href="{{ websiteSetupValue('facebook') }}" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                @endif
+                @if (websiteSetupValue('twitter'))
+                <li><a href="{{websiteSetupValue('twitter')}}" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                @endif
+                @if (websiteSetupValue('instagram'))
+                <li><a href="{{ websiteSetupValue('instagram') }}" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                @endif
+                @if (websiteSetupValue('youtube'))
+                <li><a href="{{ websiteSetupValue('youtube') }}" target="_blank"><i class="ri-youtube-fill"></i></a></li>
+                @endif
+                @if (websiteSetupValue('google'))
+                <li><a href="{{ websiteSetupValue('google') }}" target="_blank"><i class="ri-google-fill"></i></a></li>
+                @endif
             </ul>
         </div>
         <div class="others-option d-lg-none">
