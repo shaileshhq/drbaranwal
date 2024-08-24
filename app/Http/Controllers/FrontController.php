@@ -81,8 +81,10 @@ class FrontController extends Controller
 
     public function gallery()
     {
-        $gallery_list = Gallery::latest()->get();
-        return view('frontend.gallery', compact('gallery_list'));
+        $clinic_gallery = Gallery::where('type', 'clinic')->latest()->get();
+        $happy_patient_gallery = Gallery::where('type', 'happy_patient')->latest()->get();
+        $case_gallery = Gallery::where('type', 'case')->latest()->get();
+        return view('frontend.gallery', compact('clinic_gallery', 'happy_patient_gallery', 'case_gallery'));
     }
 
     public function blog()

@@ -5802,6 +5802,7 @@ article {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+  margin-top:15px;
 }
 
 .img-box {
@@ -5861,6 +5862,30 @@ article {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+.gallery-img .nav-tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.gallery-img .nav-tabs .nav-link.active {
+  font-weight: bold;
+  background: #097969;
+  border-color: #dee2e6 #dee2e6 #fff;
+  color:#fff;
+}
+
+.gallery-img .nav-tabs .nav-link{
+    color: #097969;
+    border-color:#666;
+    margin-bottom: 10px;
+    border-radius: 0;
+    padding: 4px 15px;
+    margin-right: 10px;
+}
+.gallery-img .nav-tabs{
+  border-bottom:0;
 }
 
 /* End Gallery */
