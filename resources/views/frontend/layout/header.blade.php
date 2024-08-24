@@ -108,14 +108,19 @@
                             Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('blog') }}" class="dropdown-toggle nav-link"
-                            {{ Route::is('blog') ? 'active' : '' }}>
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
                             Blog
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="{{ route('staff') }}"
-                                    class="nav-link {{ Route::is('staff') ? 'active' : '' }}">
+                                <a href="{{ route('blog') }}"
+                                    class="nav-link {{ Route::is('blog') ? 'active' : '' }}">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('media') }}"
+                                    class="nav-link {{ Route::is('media') ? 'active' : '' }}">
                                     Media
                                 </a>
                             </li>

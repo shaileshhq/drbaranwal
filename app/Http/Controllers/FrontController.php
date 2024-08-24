@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Award;
+use App\Models\Media;
 use App\Models\Doctor;
 use App\Models\Slider;
 use App\Models\Enquiry;
@@ -98,6 +99,18 @@ class FrontController extends Controller
         $blog_list = Blog::latest()->take(3)->get();
         $blog_detail = Blog::where('slug', $id)->firstOrFail();
         return view('frontend.blog_details', compact('blog_detail', 'blog_list'));
+    }
+    public function media()
+    {
+        $media_list = Media::latest()->get();
+        return view('frontend.media', compact('media_list'));
+    }
+
+    public function mediaDetail($id)
+    {
+        $media_list = Media::latest()->take(3)->get();
+        $media_detail = Media::where('slug', $id)->firstOrFail();
+        return view('frontend.media_details', compact('media_detail', 'media_list'));
     }
 
     public function contact()
