@@ -42,7 +42,9 @@
                              <h6><i class="flaticon-phone-call"></i>Call Us</h6>
                              @if (websiteSetupValue('contact'))
                                  <a
-                                     href="tel:+91-{{ websiteSetupValue('contact') }}">+91-{{ websiteSetupValue('contact') }}</a>
+                                     href="tel:+91-{{ websiteSetupValue('contact') }}">+91-{{ websiteSetupValue('contact') }} ,</a>
+                                     <a
+                                     href="tel:+91-{{ websiteSetupValue('phone') }}">+91-{{ websiteSetupValue('phone') }}</a>
                              @endif
                          </div>
                          <div class="contact-info">

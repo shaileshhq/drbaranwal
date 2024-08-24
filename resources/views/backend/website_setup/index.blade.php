@@ -71,6 +71,13 @@
                                 </div>
 
                                 <div class="col-lg-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="text" class="form-control" name="phone" id="phone"
+                                        value="{{ websiteSetupValue('phone') }}" placeholder="Enter phone number">
+                                    <input type="hidden" name="type[]" value="phone">
+                                </div>
+
+                                <div class="col-lg-6 mb-3">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" name="email" id="email"
                                         value="{{ websiteSetupValue('email') }}" placeholder="Enter email">
@@ -83,7 +90,7 @@
                                     <input type="hidden" name="type[]" value="address">
 
                                 </div>
-                                <div class="col-lg-6 mb-3">
+                                <div class="col-lg-12 mb-3">
                                     <label for="footerText" class="form-label">Footer Text</label>
                                     <textarea class="form-control" id="footerText" rows="3" name="footerText">{{ websiteSetupValue('footerText') }}</textarea>
                                     <input type="hidden" name="type[]" value="footerText">

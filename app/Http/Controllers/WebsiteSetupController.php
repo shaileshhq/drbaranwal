@@ -38,6 +38,7 @@ class WebsiteSetupController extends Controller
         $input = $request->all();
         foreach ($input['type'] as $types){
             if(isset($input[$types])){
+                
                 if($types == "logo"){
                     $logoImage = time().rand(99, 999).'.'.$input[$types]->extension();
                     $input[$types]->storeAs('website_setup', $logoImage, 'public');

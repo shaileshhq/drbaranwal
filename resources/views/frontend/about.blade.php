@@ -115,6 +115,7 @@
                                     <div class="single-team-info">
                                         <h3>Dr. A.K Baranwal</h3>
                                         <span>B.DS, M.D.S.(Gold Medalist)</span>
+                                        <p>Senior Consultant Endodontist Cosmetic Dental Surgeon & Certifed Implantologist Former Sr. Resident (IMS, BHU) Former SRF (P), DRDO (DEFENCE) </p>
                                     </div>
                                 </div>
                             </div>
