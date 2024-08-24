@@ -33,6 +33,22 @@
                             @csrf
                             <div class="row">
                                 <div class="col-lg-6 mb-3">
+                                    <label for="type" class="form-label">Type</label>
+                                    <select class="form-control" name="type" id="type">
+                                        <option value="" selected>--Select Type--</option>
+                                        <option value="clinic"
+                                            {{ $gallery && $gallery->type == 'clinic' ? 'selected' : '' }}>Clinic</option>
+                                        <option value="case" {{ $gallery && $gallery->type == 'case' ? 'selected' : '' }}>
+                                            Case</option>
+                                        <option value="happy_patient"
+                                            {{ $gallery && $gallery->type == 'happy_patient' ? 'selected' : '' }}>Happy
+                                            Patients</option>
+                                    </select>
+                                    @error('type')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="col-lg-6 mb-3">
                                     <label for="formFile" class="form-label">Image</label>
                                     <input class="form-control" type="file" name="image" id="formFile">
                                     @error('image')

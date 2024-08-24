@@ -74,6 +74,7 @@
                         <thead class="table-light">
                             <tr>
                                 <th>#</th>
+                                <th>Type</th>
                                 <th>Image</th>
                                 <th>Actions</th>
                             </tr>
@@ -82,6 +83,7 @@
                             @foreach ($gallery as $key => $item)
                                 <tr>
                                     <td>{{ $key + 1 }}</td>
+                                    <td>{{$item->type}}</td>
                                     <td><img src="{{ asset('public/storage/gallery/' . $item->image) }}" width="150"></td>
                                     <td>
                                         <div class="d-flex order-actions">

@@ -38,10 +38,12 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
         $request->validate([
+            'type'   => 'required',
             'image'  =>  'required|image|mimes:jpeg,png,jpg',
         ]);
 
         $gallery = new Gallery;
+        $gallery->type = $request->type;
         if($request->image){
             $file_photo = time().'-'.rand(111, 990).'.'.$request->image->extension();
             $request->image->storeAs('gallery', $file_photo, 'public');
@@ -84,9 +86,11 @@ class GalleryController extends Controller
     public function update(Request $request, Gallery $gallery)
     {
         $request->validate([
+            'type'    => 'required',
             'image'   =>  'nullable|image|mimes:jpeg,png,jpg',
         ]);
 
+        $gallery->type = $request->type;
         if($request->image){
             $file_photo = time().'-'.rand(111, 990).'.'.$request->image->extension();
             $request->image->storeAs('gallery', $file_photo, 'public');
