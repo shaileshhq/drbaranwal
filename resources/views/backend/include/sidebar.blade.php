@@ -49,6 +49,14 @@
             </a>
         </li>
         <li
+        class="{{ Route::is('media.index') || Route::is('media.create') || Route::is('media.edit') ? 'mm-active' : '' }}">
+        <a href="{{ route('media.index') }}">
+            <div class="parent-icon"><i class="bx bx-message-square-edit"></i>
+            </div>
+            <div class="menu-title">Media</div>
+        </a>
+    </li>
+        <li
             class="{{ Route::is('service.index') || Route::is('service.create') || Route::is('service.edit') ? 'mm-active' : '' }}">
             <a href="{{ route('service.index') }}">
                 <div class="parent-icon"><i class='bx bx-cog'></i>

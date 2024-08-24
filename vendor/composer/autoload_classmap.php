@@ -47,6 +47,7 @@ return array(
     'App\\Models\\Doctor' => $baseDir . '/app/Models/Doctor.php',
     'App\\Models\\Enquiry' => $baseDir . '/app/Models/Enquiry.php',
     'App\\Models\\Gallery' => $baseDir . '/app/Models/Gallery.php',
+    'App\\Models\\Media' => $baseDir . '/app/Models/Media.php',
     'App\\Models\\OurMission' => $baseDir . '/app/Models/OurMission.php',
     'App\\Models\\OurTeam' => $baseDir . '/app/Models/OurTeam.php',
     'App\\Models\\Service' => $baseDir . '/app/Models/Service.php',
