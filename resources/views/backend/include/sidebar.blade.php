@@ -51,7 +51,7 @@
         <li
         class="{{ Route::is('media.index') || Route::is('media.create') || Route::is('media.edit') ? 'mm-active' : '' }}">
         <a href="{{ route('media.index') }}">
-            <div class="parent-icon"><i class="bx bx-message-square-edit"></i>
+            <div class="parent-icon"><i class="bx bx-camera"></i>
             </div>
             <div class="menu-title">Media</div>
         </a>

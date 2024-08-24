@@ -178,7 +178,7 @@
                         <div class="accordion" id="navbarAccordion30">
                             <div class="accordion-item">
                                 <a href="{{ route('about') }}" class="accordion-link">
-                                    About
+                                    About Clinic
                                 </a>
                             </div>
                             <div class="accordion-item">

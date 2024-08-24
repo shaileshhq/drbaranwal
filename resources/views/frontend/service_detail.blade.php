@@ -60,7 +60,7 @@
           <div class="row">
               <div class="col-xl-12">
                   <div class="section-title style-one text-center mb-40">
-                      <span><img src="{{ asset('public/frontend_css/assets/img/section-shape.svg')}}" alt="Image">Enquiry</span>
+                      {{-- <span><img src="{{ asset('public/frontend_css/assets/img/section-shape.svg')}}" alt="Image">Enquiry</span> --}}
                       <h2>We will get in touch with you <span>shortly .</span></h2>
                   </div>
               </div>
