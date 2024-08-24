@@ -28,5 +28,8 @@ Route::post('/appointment-store', 'App\Http\Controllers\FrontController@appointm
 Route::get('/privacy-policy', 'App\Http\Controllers\FrontController@privacy')->name('privacy');
 Route::get('/terms-condition', 'App\Http\Controllers\FrontController@terms')->name('terms');
 Route::get('/our-mission', 'App\Http\Controllers\FrontController@mission')->name('mission');
-Route::get('/our-team', 'App\Http\Controllers\FrontController@team')->name('team');
+Route::get('/our-staff', 'App\Http\Controllers\FrontController@staff')->name('staff');
+Route::get('/our-doctor', 'App\Http\Controllers\FrontController@doctor')->name('doctor');
+Route::get('/super-doctor', 'App\Http\Controllers\FrontController@superSpecialist')->name('super-doctor');
+
 

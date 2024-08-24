@@ -350,13 +350,13 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    @foreach($teams as $team)
+                    @foreach($doctor as $data)
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         <div class="team-card style-one">
-                            <img src="{{asset('public/storage/team/' .$team->image)}}" alt="Image">
+                            <img src="{{asset('public/storage/doctor/' .$data->image)}}" alt="Image">
                             <div class="team-info">
-                                <h3><a href="#">{{$team->name}}</a></h3>
-                                <span>{{$team->designation}}</span>
+                                <h3><a href="#">{{$data->name}}</a></h3>
+                                <span>{{$data->designation}}</span>
                             </div>
                         </div>
                     </div>

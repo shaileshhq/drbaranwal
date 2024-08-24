@@ -50,15 +50,22 @@
                                         <a href="{{route('mission')}}" class="nav-link {{ Route::is('mission') ? 'active' : '' }}">Vision - Mission</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{route('team')}}" class="nav-link {{ Route::is('team') ? 'active' : '' }}">
-                                           Our Team
+                                        <a href="{{route('staff')}}" class="nav-link {{ Route::is('staff') ? 'active' : '' }}">
+                                           Our Staff
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('doctor')}}" class="nav-link {{ Route::is('doctor') ? 'active' : '' }}">
+                                           Our Doctor
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="{{route('super-doctor')}}" class="nav-link {{ Route::is('super-doctor') ? 'active' : '' }}">
+                                           Our Super Specialist Doctor
                                         </a>
                                     </li>
                                 </ul>
                             </li>
-                            {{-- <li class="nav-item">
-                                <a href="{{route('about')}}" class="nav-link" {{ Route::is('about') ? 'active' : '' }}>About Us</a>
-                            </li> --}}
                             <li class="nav-item">
                                 <a href="{{ route('gallery') }}" class="nav-link {{ Route::is('gallery') ? 'active' : '' }}">Gallery</a>
                             </li>
@@ -145,8 +152,18 @@
                                         </a>
                                     </div>
                                     <div class="accordion-item">
-                                        <a href="{{route('team')}}" class="accordion-link">
-                                            our Team
+                                        <a href="{{route('staff')}}" class="accordion-link">
+                                            our Staff
+                                        </a>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <a href="{{route('doctor')}}" class="accordion-link">
+                                            our Doctor
+                                        </a>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <a href="{{route('staff')}}" class="accordion-link">
+                                            our Superspecialist Doctor
                                         </a>
                                     </div>
                                 </div>

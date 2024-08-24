@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Award;
+use App\Models\Doctor;
 use App\Models\Slider;
 use App\Models\Enquiry;
 use App\Models\Gallery;
@@ -13,6 +14,7 @@ use App\Models\OurMission;
 use App\Models\Appointment;
 use Illuminate\Http\Request;
 use App\Models\ServiceEnquiry;
+use App\Models\SuperspecialistDoctor;
 
 class FrontController extends Controller
 {
@@ -22,9 +24,9 @@ class FrontController extends Controller
         $award_list     = Award::orderBy('id', 'desc')->get();
         $service_list   = Service::orderBy('id', 'desc')->take(4)->get();
         $blog_list      = Blog::orderBy('id', 'desc')->get();
-        $teams          = OurTeam::latest()->get();
+        $doctor         = Doctor::latest()->get();
         $gallery_list   = Gallery::latest()->latest()->inRandomOrder()->take(8)->get();
-        return view('frontend.index', compact('slider_list', 'award_list', 'service_list', 'blog_list', 'gallery_list','teams'));
+        return view('frontend.index', compact('slider_list', 'award_list', 'service_list', 'blog_list', 'gallery_list','doctor'));
     }
 
     public function about()
@@ -157,9 +159,21 @@ class FrontController extends Controller
         return view('frontend.about.mission',compact('missions'));
     }
 
-    public function team()
+    public function staff()
     {
-        $teams = OurTeam::latest()->get();
-        return view('frontend.about.team',compact('teams'));
+        $staff = OurTeam::latest()->get();
+        return view('frontend.about.staff',compact('staff'));
+    }
+
+    public function doctor()
+    {
+        $doctor = Doctor::latest()->get();
+        return view('frontend.about.doctor',compact('doctor'));
+    }
+
+    public function superSpecialist()
+    {
+        $superspecialist = SuperspecialistDoctor::latest()->get();
+        return view('frontend.about.superspecialist',compact('superspecialist'));
     }
 }
