@@ -1,7 +1,7 @@
 <!-- Start Navbar Area -->
 <div class="navbar-area style-one" id="navbar">
     <div class="header-top">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-9">
                     <ul class="contact-info list-style">
@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="{{ route('index') }}">
                 @if (websiteSetupValue('logo'))
@@ -140,7 +140,7 @@
                                 href="tel:{{ websiteSetupValue('contact') }}">+91-{{ websiteSetupValue('contact') }}</a>
                         </div>
                     </div>
-                    <div class="option-item">
+                    <div class="option-item d-none">
                         <a class="sidebar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
                             aria-controls="navbarOffcanvas">
                             <i class="flaticon-list"></i>
