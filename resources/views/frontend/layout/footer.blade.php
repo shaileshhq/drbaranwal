@@ -11,10 +11,7 @@
                              <h3 class="text-white">Our Future Goals<img
                                      src="{{ asset('public/frontend_css/assets/img/section-shape-3.webp') }}"
                                      alt="Image"></h3>
-                             <p>As the leading dental clinic in Varanasi, we have constantly attempted to serve our
-                                 patients with the best treatment, comfortability, and care that we can provide them.
-                                 Our future goals include further evolution in our cutting-edge technology & high end
-                                 machines which embarks a new journey for dental innovation in Varanasi. </p>
+                             <p>{{ websiteSetupValue('footerText') }}</p>
                          </div>
                      </div>
                  </div>
@@ -41,32 +38,17 @@
                          <div class="contact-info">
                              <h6><i class="flaticon-phone-call"></i>Call Us</h6>
                              @if (websiteSetupValue('contact'))
+                                 <a href="tel:+91-{{ websiteSetupValue('contact') }}">+91-{{ websiteSetupValue('contact') }}
+                                     ,</a>
                                  <a
-                                     href="tel:+91-{{ websiteSetupValue('contact') }}">+91-{{ websiteSetupValue('contact') }}</a>
+                                     href="tel:+91-{{ websiteSetupValue('phone') }}">+91-{{ websiteSetupValue('phone') }}</a>
                              @endif
                          </div>
                          <div class="contact-info">
                              <h6><i class="flaticon-pin"></i>Contact Address</h6>
                              <p> {{ websiteSetupValue('address') }}</p>
                          </div>
-                         <ul class="social-profile list-style">
-                             @if (websiteSetupValue('facebook'))
-                                 <li><a href="{{ websiteSetupValue('facebook') }}" target="_blank"><i
-                                             class="ri-facebook-fill"></i></a></li>
-                             @endif
-                             @if (websiteSetupValue('twitter'))
-                                 <li><a href="{{ websiteSetupValue('twitter') }}" target="_blank"><i
-                                             class="ri-twitter-fill"></i></a></li>
-                             @endif
-                             @if (websiteSetupValue('instagram'))
-                                 <li><a href="{{ websiteSetupValue('instagram') }}" target="_blank"><i
-                                             class="ri-instagram-line"></i></a></li>
-                             @endif
-                             @if (websiteSetupValue('linkedin'))
-                                 <li><a href="{{ websiteSetupValue('linkedin') }}" target="_blank"><i
-                                             class="ri-linkedin-fill"></i></a></li>
-                             @endif
-                         </ul>
+
                      </div>
                  </div>
                  <div class="col-xxl-6 col-xl-5 col-lg-6 col-md-12 col-sm-6 pe-xxl-6">
@@ -84,9 +66,6 @@
                                      Us</a></li>
                              <li><a href="#appointment"><i class="ri-arrow-right-double-line"></i>Make An
                                      Appointment</a></li>
-                             {{-- <li><a href="#"><i class="ri-arrow-right-double-line"></i>Faq</a></li>
-                            <li><a href="#"><i class="ri-arrow-right-double-line"></i>Privacy Policy</a></li>
-                            <li><a href="#"><i class="ri-arrow-right-double-line"></i>Terms & Condition</a></li> --}}
                          </ul>
                      </div>
                  </div>
@@ -94,10 +73,33 @@
                      <div class="footer-widget">
                          <h3 class="footer-widget-title">Clinic Hours</h3>
                          <ul class="opening-time list-style">
-                             <li><span>Mon - Thu</span> <span>9:00 AM - 7:00 PM</span></li>
-                             <li><span>Friday - </span> <span>9:00 AM - 6:00 PM</span></li>
-                             <li><span>Saturday -</span> <span>Closed</span></li>
-                             <li><span>Sunday -</span> <span>Closed</span></li>
+                             <li><span>Mon - Sun</span> <span>10:00 AM - 2:00 PM</span></li>
+                         </ul>
+                         <ul class="social-profile list-style">
+                             @if (websiteSetupValue('facebook'))
+                                 <li><a href="{{ websiteSetupValue('facebook') }}" target="_blank"><i
+                                             class="ri-facebook-fill"></i></a></li>
+                             @endif
+                             @if (websiteSetupValue('twitter'))
+                                 <li><a href="{{ websiteSetupValue('twitter') }}" target="_blank"><i
+                                             class="ri-twitter-fill"></i></a></li>
+                             @endif
+                             @if (websiteSetupValue('instagram'))
+                                 <li><a href="{{ websiteSetupValue('instagram') }}" target="_blank"><i
+                                             class="ri-instagram-line"></i></a></li>
+                             @endif
+                             @if (websiteSetupValue('linkedin'))
+                                 <li><a href="{{ websiteSetupValue('linkedin') }}" target="_blank"><i
+                                             class="ri-linkedin-fill"></i></a></li>
+                             @endif
+                             @if (websiteSetupValue('youtube'))
+                                 <li><a href="{{ websiteSetupValue('youtube') }}" target="_blank"><i
+                                             class="ri-youtube-fill"></i></a></li>
+                             @endif
+                             @if (websiteSetupValue('google'))
+                                 <li><a href="{{ websiteSetupValue('google') }}" target="_blank"><i
+                                             class="ri-google-fill"></i></a></li>
+                             @endif
                          </ul>
                      </div>
                  </div>

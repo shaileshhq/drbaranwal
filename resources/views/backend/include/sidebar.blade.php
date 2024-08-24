@@ -49,6 +49,14 @@
             </a>
         </li>
         <li
+        class="{{ Route::is('media.index') || Route::is('media.create') || Route::is('media.edit') ? 'mm-active' : '' }}">
+        <a href="{{ route('media.index') }}">
+            <div class="parent-icon"><i class="bx bx-camera"></i>
+            </div>
+            <div class="menu-title">Media</div>
+        </a>
+    </li>
+        <li
             class="{{ Route::is('service.index') || Route::is('service.create') || Route::is('service.edit') ? 'mm-active' : '' }}">
             <a href="{{ route('service.index') }}">
                 <div class="parent-icon"><i class='bx bx-cog'></i>
@@ -64,11 +72,19 @@
             </a>
         </li>
         <li>
-            <a href="{{ route('team.index') }}">
-                <div class="parent-icon"><i class='bx bx-user-plus'></i>
+            <a class="has-arrow" href="javascript:;">
+                <div class="parent-icon"> <i class="bx bx-donate-blood"></i>
                 </div>
-                <div class="menu-title">Our Team</div>
+                <div class="menu-title">About</div>
             </a>
+            <ul>
+                <li> <a href="{{ route('team.index') }}"><i class="bx bx-right-arrow-alt"></i>Our Staff</a>
+                </li>
+                <li> <a href="{{ route('doctor.index') }}"><i class="bx bx-right-arrow-alt"></i>Our Doctor</a>
+                </li>
+                <li> <a href="{{ route('superdoctor.index') }}"><i class="bx bx-right-arrow-alt"></i>SuperSpecialist Doctor's</a>
+                </li>
+            </ul>
         </li>
         <li>
             <a href="{{ route('mission.index') }}">

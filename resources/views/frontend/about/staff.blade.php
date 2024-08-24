@@ -10,10 +10,10 @@
             class="br-shape-three">
         <div class="container">
             <div class="breadcrumb-content">
-                <h2>Our Team</h2>
+                <h2>Our Staff</h2>
                 <ul class="breadcrumb-menu list-style">
                     <li><a href="index.php">Home</a></li>
-                    <li>Our Team</li>
+                    <li>Our Staff</li>
                 </ul>
             </div>
         </div>
@@ -27,8 +27,8 @@
                     <div class="col-xxl-6 col-xl-8 col-lg-7 col-md-8">
                         <div class="section-title style-one">
                             <span><img src="{{ asset('public/frontend_css/assets/img/section-shape.svg') }}" alt="Image">
-                                Our Team</span>
-                            <h2>Super Specialist doctor</h2>
+                                Our Staff</span>
+                            <h2>Our Staff</h2>
                         </div>
                     </div>
                     <div class="team-slider-btn slider-btn">
@@ -43,7 +43,7 @@
                 <div class="team-card-wrap">
                     <div class="team-slider swiper">
                         <div class="swiper-wrapper">
-                            @foreach($teams as $team)
+                            @foreach($staff as $team)
                             <div class="swiper-slide">
                                 <div class="team-card style-two">
                                     <div class="team-img">

@@ -207,8 +207,8 @@ a {
 }
 
 .sidebar-wrapper .metismenu ul {
-	border: 1px solid #ededed;
-	background: #fff
+	/* border: 1px solid #ededed; */
+	background: transparent
 }
 
 .sidebar-wrapper .metismenu ul ul a {

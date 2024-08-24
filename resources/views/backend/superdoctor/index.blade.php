@@ -9,7 +9,7 @@
                     <ol class="breadcrumb mb-0 p-0">
                         <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">All Gallery</li>
+                        <li class="breadcrumb-item active" aria-current="page">All SuperSpecialist Doctor</li>
                     </ol>
                 </nav>
             </div>
@@ -59,12 +59,12 @@
         <div class="card">
             <div class="card-header">
                 <div class="row align-items-center">
-                    <div class="col-lg-9 col-xl-9">
-                        <h3>Gallery</h3>
+                    <div class="col-lg-9 col-xl-10">
+                        <h3>Our SuperSpecialist Doctor</h3>
                     </div>
-                    <div class="col-lg-3 col-xl-3 text-end">
-                        <a href="{{ route('gallery.create') }}" class="btn btn-primary radius-30 mt-2 mt-lg-0"><i
-                                class="bx bxs-plus-square"></i>Add Gallery</a>
+                    <div class="col-lg-3 col-xl-2">
+                        <a href="{{ route('superdoctor.create') }}" class="btn btn-primary radius-30 mt-2 mt-lg-0"><i
+                                class="bx bxs-plus-square"></i>Add Doctor</a>
                     </div>
                 </div>
             </div>
@@ -74,23 +74,25 @@
                         <thead class="table-light">
                             <tr>
                                 <th>#</th>
-                                <th>Type</th>
                                 <th>Image</th>
+                                <th>Name</th>
+                                <th>Designation</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($gallery as $key => $item)
+                            @foreach ($superspecialist as $key=>$item)
                                 <tr>
-                                    <td>{{ $key + 1 }}</td>
-                                    <td>{{$item->type}}</td>
-                                    <td><img src="{{ asset('public/storage/gallery/' . $item->image) }}" width="150"></td>
+                                    <td>{{ $key+1 }}</td>
+                                    <td><img src="{{asset('public/storage/superspecialist/' .$item->image)}}" style="width:50px;"></td>
+                                    <td>{{ $item->name }}</td>
+                                    <td>{{$item->designation}}</td>
                                     <td>
                                         <div class="d-flex order-actions">
-                                            <a href="{{ route('gallery.edit', $item->id) }}" class="">
+                                            <a href="{{ route('superdoctor.edit', $item->id) }}" class="">
                                                 <i class='bx bxs-edit'></i>
                                             </a>
-                                            <form action="{{ route('gallery.destroy', $item->id) }}" method="POST">
+                                            <form action="{{ route('superdoctor.destroy', $item->id) }}" method="POST">
                                                 @method('Delete')
                                                 @csrf
                                                 <button type="submit" class="ms-1">

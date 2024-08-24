@@ -7,7 +7,7 @@
             <div class="ps-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="{{route('gallery.index')}}"><i class="bx bx-home-alt"></i></a>
+                        <li class="breadcrumb-item"><a href="{{ route('gallery.index') }}"><i class="bx bx-home-alt"></i></a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">Gallery</li>
                     </ol>
@@ -32,10 +32,22 @@
 
                             <div class="row">
                                 <div class="col-lg-6 mb-3">
+                                    <label for="type" class="form-label">Type</label>
+                                    <select class="form-control" name="type" id="type">
+                                        <option value="" selected>--Select Type--</option>
+                                        <option value="clinic">Clinic</option>
+                                        <option value="case">Case</option>
+                                        <option value="happy_patient">Happy Patients</option>
+                                    </select>
+                                    @error('type')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="col-lg-6 mb-3">
                                     <label for="formFile" class="form-label">Image</label>
                                     <input class="form-control" type="file" name="image" id="formFile">
                                     @error('image')
-                                        <span class="text-danger">{{$message}}</span>
+                                        <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
                             </div>

@@ -7,9 +7,9 @@
             <div class="ps-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0 p-0">
-                        <li class="breadcrumb-item"><a href="{{ route('gallery.index') }}"><i class="bx bx-home-alt"></i></a>
+                        <li class="breadcrumb-item"><a href="{{ route('superdoctor.index') }}"><i class="bx bx-home-alt"></i></a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">Galley</li>
+                        <li class="breadcrumb-item active" aria-current="page">Super Specialist Doctor</li>
                     </ol>
                 </nav>
             </div>
@@ -20,31 +20,23 @@
             <div class="card-header">
                 <div class="row align-items-center">
                     <div class="col-lg-12 col-xl-10">
-                        <h3>Edit Gallery</h3>
+                        <h3>Edit Super Specialist Doctor</h3>
                     </div>
                 </div>
             </div>
             <div class="card-body p-4">
                 <div class="form-body mt-4">
                     <div class="border border-3 p-4 rounded">
-                        <form method="POST" action="{{ route('gallery.update', $gallery->id) }}"
+                        <form method="POST" action="{{ route('superdoctor.update', $superspecialist->id) }}"
                             enctype="multipart/form-data">
-                            @method('PUT')
                             @csrf
+                            @method('PUT')
                             <div class="row">
                                 <div class="col-lg-6 mb-3">
-                                    <label for="type" class="form-label">Type</label>
-                                    <select class="form-control" name="type" id="type">
-                                        <option value="" selected>--Select Type--</option>
-                                        <option value="clinic"
-                                            {{ $gallery && $gallery->type == 'clinic' ? 'selected' : '' }}>Clinic</option>
-                                        <option value="case" {{ $gallery && $gallery->type == 'case' ? 'selected' : '' }}>
-                                            Case</option>
-                                        <option value="happy_patient"
-                                            {{ $gallery && $gallery->type == 'happy_patient' ? 'selected' : '' }}>Happy
-                                            Patients</option>
-                                    </select>
-                                    @error('type')
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" name="name" id="name"
+                                        placeholder="Enter Your Name" value="{{ $superspecialist->name }}">
+                                    @error('name')
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                 </div>
@@ -55,9 +47,24 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                                     <label for="formFile">
-                                        <img src="{{ asset('public/storage/gallery/' . $gallery->image) }}" width="100%"
+                                        <img src="{{ asset('public/storage/superspecialist/' . $superspecialist->image) }}" width="100%"
                                             height="100">
                                     </label>
+                                </div>
+                                <div class="col-lg-6 mb-3">
+                                    <label for="designation" class="form-label">Designation</label>
+                                    <input type="text" class="form-control" name="designation" id="designation"
+                                        placeholder="Enter Your Designation" value="{{ $superspecialist->designation }}">
+                                    @error('designation')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+                                </div>
+                                <div class="col-lg-12 mb-3">
+                                    <label for="description" class="form-label">Description</label>
+                                    <textarea class="form-control" name="description" id="description" rows="3">{{ $superspecialist->description }}</textarea>
+                                    @error('description')
+                                        <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col">

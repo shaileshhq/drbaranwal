@@ -54,7 +54,6 @@
                                     <img src="{{ asset('public/storage/website_setup/' . websiteSetupValue('logo')) }}"
                                         alt="Logo" height="50">
                                 </div>
-
                                 <div class="col-lg-6 mb-3">
                                     <label for="favicon" class="form-label">Favicon</label>
                                     <input class="form-control" type="file" name="favicon" id="favicon">
@@ -62,59 +61,68 @@
                                     <img src="{{ asset('public/storage/website_setup/' . websiteSetupValue('favicon')) }}"
                                         alt="Logo" height="50">
                                 </div>
-
                                 <div class="col-lg-6 mb-3">
                                     <label for="contact" class="form-label">Contact Number</label>
                                     <input type="text" class="form-control" name="contact" id="contact"
                                         value="{{ websiteSetupValue('contact') }}" placeholder="Enter contact number">
                                     <input type="hidden" name="type[]" value="contact">
                                 </div>
-
+                                <div class="col-lg-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="text" class="form-control" name="phone" id="phone"
+                                        value="{{ websiteSetupValue('phone') }}" placeholder="Enter phone number">
+                                    <input type="hidden" name="type[]" value="phone">
+                                </div>
                                 <div class="col-lg-6 mb-3">
                                     <label for="email" class="form-label">Email</label>
                                     <input type="email" class="form-control" name="email" id="email"
                                         value="{{ websiteSetupValue('email') }}" placeholder="Enter email">
                                     <input type="hidden" name="type[]" value="email">
-
                                 </div>
                                 <div class="col-lg-6 mb-3">
                                     <label for="address" class="form-label">Address</label>
                                     <textarea class="form-control" id="address" rows="3" name="address">{{ websiteSetupValue('address') }}</textarea>
                                     <input type="hidden" name="type[]" value="address">
-
                                 </div>
-                                <div class="col-lg-6 mb-3">
+                                <div class="col-lg-12 mb-3">
                                     <label for="footerText" class="form-label">Footer Text</label>
                                     <textarea class="form-control" id="footerText" rows="3" name="footerText">{{ websiteSetupValue('footerText') }}</textarea>
                                     <input type="hidden" name="type[]" value="footerText">
-
                                 </div>
                                 <div class="col-lg-4 mb-3">
                                     <label for="facebook" class="form-label">Facebook Link</label>
                                     <input type="text" class="form-control" name="facebook" id="facebook"
                                         value="{{ websiteSetupValue('facebook') }}" placeholder="Enter facebook link">
                                     <input type="hidden" name="type[]" value="facebook">
-
                                 </div>
                                 <div class="col-lg-4 mb-3">
                                     <label for="instagram" class="form-label">Instagram Link</label>
                                     <input type="text" class="form-control" name="instagram" id="instagram"
                                         value="{{ websiteSetupValue('instagram') }}" placeholder="Enter instagram link">
                                     <input type="hidden" name="type[]" value="instagram">
-
                                 </div>
                                 <div class="col-lg-4 mb-3">
                                     <label for="twitter" class="form-label">Twitter Link</label>
                                     <input type="text" class="form-control" name="twitter" id="twitter"
                                         value="{{ websiteSetupValue('twitter') }}" placeholder="Enter twitter link">
                                     <input type="hidden" name="type[]" value="twitter">
-
+                                </div>
+                                <div class="col-lg-4 mb-3">
+                                    <label for="youtube" class="form-label">YouTube Link</label>
+                                    <input type="text" class="form-control" name="youtube" id="youtube"
+                                        value="{{ websiteSetupValue('youtube') }}" placeholder="Enter youtube link">
+                                    <input type="hidden" name="type[]" value="youtube">
+                                </div>
+                                <div class="col-lg-4 mb-3">
+                                    <label for="google" class="form-label">Google Link</label>
+                                    <input type="text" class="form-control" name="google" id="google"
+                                        value="{{ websiteSetupValue('google') }}" placeholder="Enter google link">
+                                    <input type="hidden" name="type[]" value="google">
                                 </div>
                                 <div class="col-lg-12 mb-3">
                                     <label for="aboutUs" class="form-label">About Us</label>
                                     <textarea class="form-control ck_editor" id="editor" name="aboutUs">{{ websiteSetupValue('aboutUs') }}</textarea>
                                     <input type="hidden" name="type[]" value="aboutUs">
-
                                 </div>
                             </div>
                             <div class="col">
