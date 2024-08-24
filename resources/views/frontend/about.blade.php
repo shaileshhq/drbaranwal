@@ -135,7 +135,7 @@
         </div>
 
         <!-- Start Team -->
-        <div class="cta-team-wrap ptb-100">
+        {{-- <div class="cta-team-wrap ptb-100">
             <div class="team-wrap">
                 <div class="container">
                     <div class="row mb-40">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
          <!-- End Team -->
          <!-- Testimonial Section Start -->
         <div class="testimonial-wrap style-one ptb-100">

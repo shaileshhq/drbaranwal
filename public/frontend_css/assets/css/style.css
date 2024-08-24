@@ -4737,10 +4737,13 @@ input#before_after_slider::-ms-tooltip {
 .single-team-widget img {
   border-radius: 5px 5px 0 0;
   width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: #fff;
 }
 .single-team-widget .single-team-info {
   border-radius: 0 0 5px 5px;
-  padding: 15px 20px 15px;
+  padding: 10px 20px 10px;
 }
 .single-team-widget .single-team-info h3 {
   font-size: 24px;
