@@ -888,11 +888,11 @@
     padding-right:25px;
   }
   .navbar-area .navbar .navbar-nav .nav-item .nav-link.dropdown-toggle {
-    padding-right: 49px;
+    padding-right: 35px;
   }
   .navbar-area .navbar .navbar-nav .nav-item .dropdown-toggle::before {
     top: 31px;
-    right: 32px;
+    right: 20px;
     font-size: 15px;
   }
   .navbar-area .navbar .others-option .option-item {
