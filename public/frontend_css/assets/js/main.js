@@ -34,6 +34,32 @@
             };
         }
     };
+     // banner slider
+     var mySwiper = new Swiper(".as_banner_slider", {
+        spaceBetween: 10,
+        grabCursor: true,
+        loop: false,
+        autoHeight: true,
+        speed:1200,
+        navigation: {
+            nextEl: ".banner-next",
+            prevEl: ".banner-prev"
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 1
+            },
+            992: {
+                slidesPerView: 1
+            },
+            1200: {
+                slidesPerView: 1
+            }
+        }
+    });
 
     //Service Slider
     var mySwiper = new Swiper(".service-slider", {

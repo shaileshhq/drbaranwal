@@ -1,7 +1,32 @@
 @extends('frontend.layout.app')
 @section('content')
+    <!--Slider -->
+    <div class="as_banner_wrapper">
+        <div class="container-fluid px-0">
+            <div class="row as_verticle_center">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="as_banner_slider swiper">
+                        <div class="swiper-wrapper">
+                            @foreach ($slider_list as $sliders)
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('public/storage/slider/' . $sliders->image) }}">
+                                </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="banner-btn">
+                        <div class="banner-prev prev-btn"><img
+                                src="{{ asset('public/frontend_css/assets/img/left-arrow.svg') }}" alt="Image"></div>
+                        <div class="banner-next next-btn"><img
+                                src="{{ asset('public/frontend_css/assets/img/right-arrow.svg') }}" alt="Image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider End -->
     <!-- Hero Section Start -->
-    <div class="hero-wrap style-one">
+    {{-- <div class="hero-wrap style-one">
         <img src="{{ asset('public/frontend_css/assets/img/hero/hero-shape-1.webp') }}" alt="Image" class="hero-shape-one">
         <img src="{{ asset('public/frontend_css/assets/img/hero/hero-shape-2.webp') }}" alt="Image" class="hero-shape-two">
         <img src="{{ asset('public/frontend_css/assets/img/hero/hero-shape-3.webp') }}" alt="Image"
@@ -41,7 +66,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Hero Section End -->
 
     <!-- Feature Section Start -->
@@ -102,7 +127,7 @@
                                 @if (websiteSetupValue('aboutUs'))
                                     <p> {!! websiteSetupValue('aboutUs') !!}</p>
                                 @else
-                                <p class="text-danger text-center">No Data Found</p>
+                                    <p class="text-danger text-center">No Data Found</p>
                                 @endif
                                 {{-- <p>Welcome to our dental clinic, where your smile is our top priority. With a team of experienced and compassionate dental professionals, we are dedicated to providing comprehensive dental care in a comfortable and friendly environment.</p> --}}
                             </div>

@@ -154,6 +154,7 @@ body {
 p,
 span {
   letter-spacing: 0.03em;
+  color:#000;
 }
 
 select {
@@ -6045,3 +6046,76 @@ article {
   padding: 10px 23px;
   border-radius: 5px;
 }
+/* Slider */
+.as_banner_wrapper {
+  padding: 0;
+  position: relative;
+  color: #ffffff;
+  overflow: hidden;
+  margin: 0;
+}
+.as_verticle_center {
+  display: flex;
+  /* align-items: center; */
+}
+.as_banner_slider {
+  position: relative;
+  z-index: 1;
+}
+.banner-btn .prev-btn{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 0 10px 10px 0;
+  background-color: #fffefe8f;
+  transition: var(--transition);
+  z-index: 2;
+}
+ .banner-btn .next-btn {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px 0 0 10px;
+  background-color: #fffefe8f;
+  transition: var(--transition);
+  z-index: 2;
+}
+.banner-btn .prev-btn img, .banner-btn .next-btn img {
+  display: block;
+  margin: 0 auto;
+  max-width: 15px;
+  transition: var(--transition);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+  .banner-btn .prev-btn {
+      left: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner-btn .prev-btn, .banner-btn .next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1299px) {
+  .banner-btn .next-btn {
+      right:0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner-btn .prev-btn, .banner-btn .next-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+}
+
