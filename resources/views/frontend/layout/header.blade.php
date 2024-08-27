@@ -6,9 +6,9 @@
                 <div class="col-lg-9">
                     <ul class="contact-info list-style">
                         <li><i class="flaticon-mail"></i><a
-                                href="mailto:{{ websiteSetupValue('email') }}"><span>{{ websiteSetupValue('email') }}</span></a>
+                                href="mailto:{{ websiteSetupValue('email') }}"><span class="text-white">{{ websiteSetupValue('email') }}</span></a>
                         </li>
-                        <li><i class="flaticon-pin"></i><span>Mahmoorganj, Varanasi, Uttar Pradesh 221010</span></li>
+                        <li><i class="flaticon-pin"></i><span class="text-white">Mahmoorganj, Varanasi, Uttar Pradesh 221010</span></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
