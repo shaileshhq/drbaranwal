@@ -13,7 +13,7 @@
                 </div>
                 <div class="col-lg-3">
                     <ul class="contact-info text-lg-end list-style">
-                        <li><i class="flaticon-clock"></i>Mon - Sun: 10.00 AM to 02.00 PM</li>
+                        <li><i class="flaticon-clock"></i>Mon - Sun: 10.00 AM to 02.30 PM</li>
                     </ul>
                 </div>
             </div>

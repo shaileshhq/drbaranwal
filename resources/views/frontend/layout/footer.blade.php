@@ -73,7 +73,7 @@
                      <div class="footer-widget">
                          <h3 class="footer-widget-title">Clinic Hours</h3>
                          <ul class="opening-time list-style">
-                             <li><span class="text-white">Mon - Sun</span> <span class="text-white">10:00 AM - 2:00 PM</span></li>
+                             <li><span class="text-white">Mon - Sun</span> <span class="text-white">10:00 AM - 02:30 PM</span></li>
                          </ul>
                          <ul class="social-profile list-style">
                              @if (websiteSetupValue('facebook'))
