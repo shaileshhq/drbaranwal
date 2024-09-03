@@ -154,7 +154,7 @@ body {
 p,
 span {
   letter-spacing: 0.03em;
-  color:#000;
+  color: #000;
 }
 
 select {
@@ -4752,7 +4752,7 @@ input#before_after_slider::-ms-tooltip {
   margin: 0 0 5px;
   text-align: center;
 }
-.single-team-widget .single-team-info p{
+.single-team-widget .single-team-info p {
   font-size: 12px;
   color: #000;
   text-align: justify;
@@ -5806,7 +5806,7 @@ article {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .img-box {
@@ -5877,19 +5877,19 @@ article {
   font-weight: bold;
   background: #097969;
   border-color: #dee2e6 #dee2e6 #fff;
-  color:#fff;
+  color: #fff;
 }
 
-.gallery-img .nav-tabs .nav-link{
-    color: #097969;
-    border-color:#666;
-    margin-bottom: 10px;
-    border-radius: 0;
-    padding: 4px 15px;
-    margin-right: 10px;
+.gallery-img .nav-tabs .nav-link {
+  color: #097969;
+  border-color: #666;
+  margin-bottom: 10px;
+  border-radius: 0;
+  padding: 4px 15px;
+  margin-right: 10px;
 }
-.gallery-img .nav-tabs{
-  border-bottom:0;
+.gallery-img .nav-tabs {
+  border-bottom: 0;
 }
 
 /* End Gallery */
@@ -6061,8 +6061,10 @@ article {
 .as_banner_slider {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
 }
-.banner-btn .prev-btn{
+.banner-btn .prev-btn {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -6075,7 +6077,7 @@ article {
   transition: var(--transition);
   z-index: 2;
 }
- .banner-btn .next-btn {
+.banner-btn .next-btn {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -6088,7 +6090,8 @@ article {
   transition: var(--transition);
   z-index: 2;
 }
-.banner-btn .prev-btn img, .banner-btn .next-btn img {
+.banner-btn .prev-btn img,
+.banner-btn .next-btn img {
   display: block;
   margin: 0 auto;
   max-width: 15px;
@@ -6096,31 +6099,47 @@ article {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1299px) {
   .banner-btn .prev-btn {
-      left: 0;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .banner-btn .prev-btn, .banner-btn .next-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+    left: 0;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1299px) {
   .banner-btn .next-btn {
-      right:0;
+    right: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .banner-btn .prev-btn, .banner-btn .next-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+  .banner-btn .prev-btn,
+  .banner-btn .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner-btn .prev-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  .banner-btn .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
   }
 }
 @media (max-width: 767.98px) {
-  .banner-btn .prev-btn{
-    left:0;
+  .banner-btn .prev-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  .banner-btn .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
   }
 }
-
