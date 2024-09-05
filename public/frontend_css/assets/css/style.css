@@ -1005,6 +1005,33 @@ select {
   height: 1px;
   bottom: 6px;
 }
+.swiper-autoheight .swiper-slide {
+  height: auto;
+  max-height: 450px;
+}
+.swiper-slide{
+  position:relative;
+  width: 100%;
+  margin: auto;
+}
+.swiper-slide img {
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+}
+
+.swiper-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+ background-color: #fffefe8f;
+}
 
 .slider-btn .prev-btn,
 .slider-btn .next-btn {
