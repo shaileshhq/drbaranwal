@@ -10,6 +10,10 @@
                             @foreach ($slider_list as $sliders)
                                 <div class="swiper-slide">
                                     <img src="{{ asset('public/storage/slider/' . $sliders->image) }}">
+                                    <div class="swiper-content">
+                                        <h4>{{$sliders->title}}</h4>
+                                        <p>{{$sliders->short_desc}}</p>
+                                    </div>
                                 </div>
                             @endforeach
                         </div>
