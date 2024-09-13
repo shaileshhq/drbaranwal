@@ -10,15 +10,15 @@
                             @foreach ($slider_list as $sliders)
                                 <div class="swiper-slide">
                                     <img src="{{ asset('public/storage/slider/' . $sliders->image) }}">
-                                    <div class="swiper-content">
+                                    {{-- <div class="swiper-content">
                                         <h4>{{$sliders->title}}</h4>
                                         <p>{{$sliders->short_desc}}</p>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             @endforeach
                         </div>
                     </div>
-                    <div class="banner-btn">
+                    <div class="banner-btn d-none">
                         <div class="banner-prev prev-btn"><img
                                 src="{{ asset('public/frontend_css/assets/img/left-arrow.svg') }}" alt="Image"></div>
                         <div class="banner-next next-btn"><img
@@ -600,4 +600,21 @@
         </div>
     </div>
     <!-- Blog Section End -->
+
+@push('scripts')
+<script>
+    var swiper = new Swiper('.swiper', {
+    loop: true, 
+    autoplay: {
+        delay: 8000, 
+        disableOnInteraction: false,
+    },
+    effect: 'fade',  
+    fadeEffect: {
+        crossFade: true
+    }
+});
+
+</script>
+@endpush
 @endsection

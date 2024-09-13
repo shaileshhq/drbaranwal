@@ -38,9 +38,13 @@
      var mySwiper = new Swiper(".as_banner_slider", {
         spaceBetween: 10,
         grabCursor: true,
-        loop: false,
+        loop: true,
         autoHeight: true,
         speed:1200,
+        autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false,
+        },
         navigation: {
             nextEl: ".banner-next",
             prevEl: ".banner-prev"
