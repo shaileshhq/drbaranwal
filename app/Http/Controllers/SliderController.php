@@ -37,8 +37,6 @@ class SliderController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'title'         =>  'required',
-            'short_desc'    =>  'required',
             'image'         =>  'required|image|mimes:jpeg,png,jpg',
         ]);
 
@@ -87,8 +85,6 @@ class SliderController extends Controller
     public function update(Request $request, Slider $slider)
     {
         $request->validate([
-            'title'         =>  'required',
-            'short_desc'    =>  'required',
             'image'         =>  'nullable|image|mimes:jpeg,png,jpg',
         ]);
 
