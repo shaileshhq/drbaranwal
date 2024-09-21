@@ -1013,15 +1013,15 @@ select {
 }
 .swiper-slide img {
   width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-  transform: scale(1); /* Initial scale */
-  transition: transform 5s ease-in-out; /* Smooth zoom in/out */
+  /* height: 100vh; */
+  /* object-fit: cover; */
+  /* object-position: center; */
+  transform: scale(1); 
+  transition: transform 5s ease-in-out; 
 }
 
 .swiper-slide-active img {
-  transform: scale(1.2); /* Zoom in to 120% */
+  transform: scale(1.2); 
 }
 
 .swiper-autoheight .swiper-slide {
